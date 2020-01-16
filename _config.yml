@@ -108,9 +108,9 @@ defaults:
       layout: single
       author_profile: true
 
-research:
+category_archive:
   type: liquid
   path: /research/
-digital_fabrication:
+tag_archive:
   type: liquid
   path: /ARTS4017/
