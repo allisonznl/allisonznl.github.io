@@ -110,7 +110,7 @@ defaults:
 
 category_archive:
   type: liquid
-  path: /research/
+  path: /categories/
 tag_archive:
   type: liquid
-  path: /ARTS4017/
+  path: /tags/
