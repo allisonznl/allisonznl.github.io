@@ -1,6 +1,6 @@
 ---
 title: "Research"
-layout: categories
+layout: research
 permalink: /research/
 author_profile: true
 ---
