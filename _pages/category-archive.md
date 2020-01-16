@@ -1,6 +1,6 @@
 ---
-title: "Posts by Category"
+title: "Research"
 layout: categories
-permalink: /categories/
+permalink: /research/
 author_profile: true
 ---
