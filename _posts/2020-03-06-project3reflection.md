@@ -1,12 +1,11 @@
 ---
-title: "Project 2 Reflection"
-date: 2020-02-21T15:34:30-04:00
+title: "Project 3 Reflection"
+date: 2020-03-06T12:18:30-12:38:30
 categories:
   - digitalfabrication
   - ARTS4017
 tags:
-  - Jekyll
-  - update
+  - projects
 ---
 
 This piece was inspired by time spent in the moutains. My favorite animals to see in the wild are black bear, who are so powerful, but also so scared and timid. I wanted my piece to embody the spirit of the black bear and have the same powerful presence and I thought cardboard would be the perfect medium to accomplish this. I also wanted to do something a little bit more technical unfolding-wise, because I love doing modular origami.  
