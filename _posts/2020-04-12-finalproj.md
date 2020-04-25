@@ -20,7 +20,7 @@ Progress 4/17/20:
 Sketches 4/12/20:
 My idea for this project was inspired by one of my favorite past-times: Rock climbing. I've always found myself in awe of the great landscapes and freedom that the sport has brought me to.
 
-![sketch_top]({{ a11isonliu.github.io}}/assets/images/finalproj/sketch_top)
+![sketch_top]({{ a11isonliu.github.io}}/assets/images/finalproj/sketch_top.png)
 
-![sketch_perspective]({{ a11isonliu.github.io}}/assets/images/finalproj/sketch_perspective)
+![sketch_perspective]({{ a11isonliu.github.io}}/assets/images/finalproj/sketch_perspective.png)
 
