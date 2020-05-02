@@ -7,7 +7,7 @@ categories:
 tags:
   - projects
 ---
-### April 30 2020
+April 30 2020
 ![final project]({{ a11isonliu.github.io}}/assets/images/finalproj/Final_Gray.png)
 
 While I was trying to find more inspiration for this project, I thought about the reasons why I was interested in taking this class and feeling grateful for the opportunities that I have had in college. These past few days in quarantine, I have spent a fair amount of time thinking about why I am doing what I am doing and about the activities that I truly enjoy doing, specifically academically. One of my goals with this class was to be able to blend my interests in geometric objects and their mathematical properties with the physical world. I have really enjoyed what I have been creating so far, but I realized that I hadn't created anything inspired by my academic interests yet.
