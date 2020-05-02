@@ -2,10 +2,9 @@
 title: "Final Project"
 date: 2020-05-01T06:18:30-8:38:30
 categories:
+tags:
   - digitalfabrication
   - ARTS4017
-tags:
-  - projects
 ---
 May 1 2020
 ![final project]({{ a11isonliu.github.io}}/assets/images/finalproj/Final_Gray.png)
