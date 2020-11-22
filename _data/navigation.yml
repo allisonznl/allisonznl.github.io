@@ -1,5 +1,11 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Programming Projects"
+    url: /code/
+  - title: "Work"
+    url: /work/
+  - title: "Education"
+    url: /education/
   - title: "Digital Fabrication"
     url: /posts/

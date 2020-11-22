@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: a11isonliu
 github_username: a11isonliu
 minimal_mistakes_skin: contrast
 search: true
@@ -63,24 +62,21 @@ author:
   bio    : "Applied Math Student at CU Boulder. Student Researcher with Kapteyn-Murnane Group."
   location : "Boulder, CO"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://a11isonliu.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/a11isonliu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/a11isonliu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/allison-liu-685497159/"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/allison-liu-685497159/"
 
 defaults:
   # _posts
@@ -105,6 +101,3 @@ defaults:
 category_archive:
   type: liquid
   path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
