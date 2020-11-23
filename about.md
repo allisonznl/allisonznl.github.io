@@ -10,6 +10,6 @@ Her work has been published in *Science Magazine* and *Proceedings of the Combus
 
 >I was taught that the way of progress was neither swift nor easy. <cite>Marie Curie</cite>
 
-As a hobby, Daniel authors the most influential JavaScript blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
+Outside of programming, Allison volunteers weekly with PISEC, an organization at CU Boulder which supports grade-school students, largely of under-represented minorities, in STEM to discover an interest in science. She loves rock climbing, hiking, and traveling. She is a routesetter at the CU Boulder Climbing gym.
 
 *Thank you for reading!*
