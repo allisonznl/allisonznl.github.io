@@ -1,12 +1,12 @@
-# Site setings
+# Site settings
 name: 'Allison Liu'
-description: 'allisonznliu@gmail.com'
+description: 'allison.liu@colorado.edu'
 meta_description: ''
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
   image: 'bio-photo1.jpg'
-  greetings: "Hi! My name is Allison Liu. I'm a student studying Applied Math and Computer Science and the University of Colorado Boulder."
+  greetings: "Hi! My name is Allison Liu. I'm a student studying Applied Math and Computer Science at the University of Colorado Boulder."
 # favicon: 'assets/images/favicon.ico'
 baseurl: 
 # production_url: https://royce.netlify.com/
@@ -32,8 +32,8 @@ navigation:
     url: /about
   - text: Style Guide
     url: /style-guide
-  - text: Contact Me
-    url: /contact
+  # - text: Contact Me
+  #   url: /contact
   - text: Search
     url: /search
 

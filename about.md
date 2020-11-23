@@ -4,12 +4,12 @@ title: About
 featured_image: /assets/images/pages/about.jpg
 ---
 
-Charles Lavoie is a senior developer from Vilnius, Lithuania. After graduating from The College with a degree in **Computer Science**, he worked for three small web shops where he honed his development skills and love for JavaScript.
+Allison Liu is a junior at the University of Colorado Boulder (expected graduation May 2022). Studying **applied mathematics** and **computer science**, she is interested in the applications of algorithms to solving every day problems. Fascinated by the power of artificial Intelligence, machine learning, and numerical analysis, she has been honing her skills in relevant classes using Python and contributing to algorithms at the forefront of ultrafast physics research with the Kapteyn-Murnane Group.
 
-His work has been recognized by Communication Arts, IBM, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. **Net** magazine named him a person to watch in 2018.
+Her work has been published in *Science Magazine* and *Proceedings of the Combustion Institute*.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+>I was taught that the way of progress was neither swift nor easy. <cite>Marie Curie</cite>
 
 As a hobby, Daniel authors the most influential JavaScript blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
 
-*Thank You for reading!*
+*Thank you for reading!*
