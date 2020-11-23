@@ -3,7 +3,7 @@ layout: post
 title: 'Designing and Fabricating a Cardboard Bear'
 tags: [Rhinoceros6, CAD, Lasercutting, ARTS4017]
 featured_image_thumbnail:
-featured_image: assets/images/posts/2020/cardboard-bear/colors_rainbow.jpg
+featured_image: assets/images/posts/2020/cardboard-bear/colors_rainbow.JPG
 featured: true
 hidden: true
 ---
