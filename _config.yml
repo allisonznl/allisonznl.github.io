@@ -34,7 +34,7 @@ timezone: America/Denver # https://en.wikipedia.org/wiki/List_of_tz_database_tim
 locale: "en-US"
 
 include:
-  - _pages
+  - ["_pages"]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -93,7 +93,7 @@ defaults:
       related: false
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
