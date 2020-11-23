@@ -80,6 +80,13 @@ footer:
       url: "https://www.linkedin.com/in/allison-liu-685497159/"
 
 defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""
@@ -91,13 +98,7 @@ defaults:
       comments: false
       share: false
       related: false
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
+
 
 category_archive:
   type: liquid
