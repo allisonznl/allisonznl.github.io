@@ -5,16 +5,16 @@ featured_image: /assets/images/pages/style_guides.jpg
 ---
 
 ## Education
-### University of Colorado, Boulder, CO
-### Applied Math B.S., Computer Science Minor, Expected Graduation May 2022
+#### University of Colorado, Boulder, CO
+#### Applied Math B.S., Computer Science Minor, Expected Graduation May 2022
 * **GPA: 3.703/4.000**
 * Relevant Coursework: Computer Science- Data Structures, Algorithms, Artificial Intelligence. Math- Multivariable Calculus, Linear Algebra, Probability, Numerical Analysis, Fourier Analysis.
 * Awards and Honors: Engineering Honors Program, BOLD Scholar, College of Engineering Dean’s List
 * Clubs and Organizations: CU Women’s Ultimate Frisbee, Society of Women Engineers (SWE)
 
 ## Work
-### Kapteyn-Murnane Group, JILA-University of Colorado Boulder
-### Student Researcher, June 2017-August 2020
+#### Kapteyn-Murnane Group, JILA-University of Colorado Boulder
+#### Student Researcher, June 2017-August 2020
 * Designed and built a commercial-quality M2 laser diagnostic device using MATLAB. I interfaced multiple pieces of scientific equipment and created a graphical user interface to collect and analyze data. The program comprehensively characterized a laser beam by implementing a modified phase-retrieval algorithm.
 * Interfaced a novel laser system with an existing chemical engineering experiment.
 
@@ -23,13 +23,13 @@ featured_image: /assets/images/pages/style_guides.jpg
 * D. Couch, Q. Nguyen, **A. Liu**, D. Hickstein, H. Kapteyn, M. Murnane, and N. Labbe. Detection of the Keto-Enol Tautomerization in Acetaldehyde, Acetone, Cyclohexanone, and Methyl Vinyl Ketone with a Novel VUV Light Source. Proc. Combust. Inst. 38 (in press 2020). DOI: 10.1010/j.proci.2020.06.139
 
 ## Engineering Experience
-### Gateway to Space Class
-### Team Leader, August-December 2018
+#### Gateway to Space Class
+#### Team Leader, August-December 2018
 * Led a team to build and design an experiment for a high-altitude weather balloon. I contributed to the programming, electronics, structural design, testing, and presentation of the engineering project. The experiment consisted of a muon detector and various other sensors connected to an Arduino.
 
 
 ## Volunteer Experience
-### Partnerships for Informal Education in the Community (PISEC), February 2020 - Present
+#### Partnerships for Informal Education in the Community (PISEC), February 2020 - Present
 * Volunteer weekly as a mentor for a program that encourages interest in STEM for students of underrepresented minorities
 
 
@@ -39,8 +39,6 @@ featured_image: /assets/images/pages/style_guides.jpg
 * Speak Mandarin Chinese
 * CPR and First-Aid Certification
 * Climbing Gym Routesetter at University of Colorado Boulder
-
-
 
 This is a pragraph. Pellentesque habitant [morbi tristique](https://example.com) senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
 
