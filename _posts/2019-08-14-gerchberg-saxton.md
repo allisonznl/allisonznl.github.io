@@ -3,7 +3,7 @@ layout: post
 title: 'Modifying the Gerchberg-Saxton Phase-Retrieval Algorithm for Laser Beams containing Orbital Angular Momentum'
 tags: [Gerchberg-Saxton, algorithms, phase retrieval, OAM, beam characterization, M2]
 featured_image_thumbnail: assets/images/posts/2019/science_cover.jpg
-featured_image: assets/images/posts/2019/retrieval.jpg
+featured_image: assets/images/posts/2019/l2.jpg
 featured: true
 hidden: true
 ---
@@ -43,8 +43,10 @@ Our algorithm uses an over-sampled intensity measurement. We take 9-30 images wi
 
 #### Handling Wavelength
 In original GS and our main algorithm, the retrieval algorithm must know the wavelength of the laser. For a single wavelength, we found the algorithm can reliably determine the wavelength to within about 5 nm.
+
 ![perfect beam]({{ a11isonliu.github.io}}assets/images/posts/2019/wavelength_perfectbeam.jpg)
-For multiple wavelengths, the algorithm does not perform very well
+For multiple wavelengths, the algorithm does not perform very well.
+
 ![multicol beam]({{ a11isonliu.github.io}}assets/images/posts/2019/wavelength_multbeam.jpg)
 
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/pretty2.jpg)
@@ -55,13 +57,16 @@ For EUV OAM beams, like the in the Science article, optics have very poor effici
 
 ![light fiber]({{ a11isonliu.github.io}}assets/images/posts/2019/lightfiber.jpg)
 (Source: ThorLabs)
+
 ![half images]({{ a11isonliu.github.io}}assets/images/posts/2019/half_imgs.jpg)
 
 
 ## Comparison to Other Techniques
 * **M^2** uses the same information as the GS algorithm to compute beam divergence characteristics (2 numbers)
+
 ![m2 schematic]({{ a11isonliu.github.io}}assets/images/posts/2019/m2.jpg)
 * **Shack-Hartmann** is an expensive (~$4000) wavefront sensor that can measure OAM content but has low spatial resolution and relatively narrow useful wavelength range (cannot be used in VUV/EUV)
+
 ![shack hartmann]({{ a11isonliu.github.io}}assets/images/posts/2019/shackhartmann.jpg)
 (Source: ThorLabs)
 
