@@ -16,7 +16,7 @@ This project spun off of a project to create an M^2 beam characterization device
 
 ##  Importance
 
-OAM beams are useful in optical communications, imaging, magnetics, quantum information science, and many other fields. For example, light containing OAM was shown to transmit up to 1.6 Tb of information per second-the equivalent of 8 Blu-ray discs per second. [(Source)](https://physicsworld.com/a/twisted-light-carries-data-over-1-km-in-optical-fibre/) Reliable phase detection is essential for the development of future technologies.
+OAM beams are useful in optical communications, imaging, magnetics, quantum information science, and many other fields. For example, light containing OAM was shown to transmit up to 1.6 Tb of information per second-the equivalent of 8 Blu-ray discs per second [(Source)](https://physicsworld.com/a/twisted-light-carries-data-over-1-km-in-optical-fibre/). Reliable phase detection is essential for the development of future technologies.
 
 Beam-characterization is a necessity for all experiments involving a laser beam and phase contains powerful information that is necessary to completely characterize a laser beam. In order to completely characterize a laser beam (or any light source for that matter), we need both intensity and phase. An intensity profile is relatively easy to obtain; we can simply shine the laser on a camera which will produce a matrix of values. Phase is more complicated and involves the use of algorithms.
 
