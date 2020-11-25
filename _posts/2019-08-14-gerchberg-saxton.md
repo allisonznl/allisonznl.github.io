@@ -3,7 +3,7 @@ layout: post
 title: 'Modifying the Gerchberg-Saxton Phase-Retrieval Algorithm for Laser Beams containing Orbital Angular Momentum'
 tags: [Gerchberg-Saxton, algorithms, phase retrieval, OAM, beam characterization, M2]
 featured_image_thumbnail: assets/images/posts/2019/GS/science_cover.jpg
-featured_image: assets/images/posts/2019/GS/l2.jpg
+featured_image: assets/images/posts/2019/GS/science_cover.jpg
 featured: true
 hidden: true
 ---
