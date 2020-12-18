@@ -4,8 +4,8 @@ title: 'Graph Search Algorithms 2'
 tags: [algorithms, graphs]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 This is a collection of algorithms programmed in an Artificial Intelligence class. While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. Uniform Cost Search, and A star. The algorithms are demonstrated on a weighted undirected graph of connected cities, as well as a maze that is represented as a matrix of binary values.

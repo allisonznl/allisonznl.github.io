@@ -4,6 +4,8 @@ title: 'Simulated Annealing'
 tags: [algorithms, AI]
 featured_image_thumbnail: assets/images/posts/2018/4_thumbnail.jpg
 featured_image: assets/images/posts/2018/4.jpg
+featured: true
+hidden: true
 ---
 
 A work at home parent is an entrepreneur who works from home and integrates parenting into his or her business activities. They are sometimes referred to as a WAHM (work at home mom) or a WAHD (work at home dad).
