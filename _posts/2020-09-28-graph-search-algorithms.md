@@ -12,7 +12,7 @@ This is the first set of a series of graph search algorithms programmed in an Ar
 
 
 ## Breadth First Search
-In Breadth-first search (BFS), the root node is expanded first, then the successors of the root, then the successors of the successors of the root, and so on, until the goal is reached. BFS finds the shallowest path to each node from the frontier, so it is best used on graphs where the goal is close to the start. For example, it could be useful when finding close connections on social media. BFS is optimal when all path lengths are equal. A queue (FIFO) is used to implement BFS to expand the shallowest nodes first. The space complexity of BFS is exponential, $O(b^d)$., where b is the branching factor and d is the depth of the solution.
+In Breadth-first search (BFS), the root node is expanded first, then the successors of the root, then the successors of the successors of the root, and so on, until the goal is reached. BFS finds the shallowest path to each node from the frontier, so it is best used on graphs where the goal is close to the start. For example, it could be useful when finding close connections on social media. BFS is optimal when all path lengths are equal. A queue (FIFO) is used to implement BFS to expand the shallowest nodes first. The space complexity of BFS is exponential, O(b^d)., where b is the branching factor and d is the depth of the solution.
 
 <pre><code class="language-python">
 def breadth_first(start, goal, state_graph, return_cost=False):
@@ -56,7 +56,7 @@ def breadth_first(start, goal, state_graph, return_cost=False):
 
 
 ## Depth First Search
-Depth-first search (DFS) traverses down a branch to a node furthest from the root before backtracking. For this reason, it is better when used on searches for which the goal is far from the start. It is very similar to a BFS, but is implemented using a stack (LIFO), so it the deepest nodes will be expanded first. DFS can also be implemented recursively. Since DFS only needs to store a single path from the root to a leaf node, the standard DFS actually has a much better space complexity than BFS, $O(bm)$, where m is the maximum depth of any node. Unfortunately, the algorithm fails in the case of an infinite-depth space; as a result, it is non-optimal.
+Depth-first search (DFS) traverses down a branch to a node furthest from the root before backtracking. For this reason, it is better when used on searches for which the goal is far from the start. It is very similar to a BFS, but is implemented using a stack (LIFO), so it the deepest nodes will be expanded first. DFS can also be implemented recursively. Since DFS only needs to store a single path from the root to a leaf node, the standard DFS actually has a much better space complexity than BFS, O(bm), where m is the maximum depth of any node. Unfortunately, the algorithm fails in the case of an infinite-depth space; as a result, it is non-optimal.
 
 <pre><code class="language-python">
 def depth_first(start, goal, state_graph, return_cost=False):
@@ -119,7 +119,7 @@ Breadth First Path = ['chi', 'det', 'buf', 'syr', 'new'] , Time (mins) = 955
 Depth First Path = ['chi', 'ind', 'col', 'pit', 'bal', 'phi', 'new'] , Time (mins) = 1110
 ```
 
-Now we use BFS and DFS on maze to get from the start at $(1,1)$ to the finish at $(10,10)$. Note that since the path costs are all equal, BFS finds the optimal solution in this case.
+Now we use BFS and DFS on maze to get from the start at (1,1) to the finish at (10,10). Note that since the path costs are all equal, BFS finds the optimal solution in this case.
 
 ```
 breadth_first((1,1), (10,10), maze_graph, True)
@@ -132,7 +132,7 @@ DFS Solution = [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), 
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/bfs_maze.png)
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/dfs_maze.png)
 
-### These helper functions are used in the algorithms above.
+#### These helper functions below are used in the algorithms above.
 
 <pre><code class="language-python">
 def path(previous, s): 
