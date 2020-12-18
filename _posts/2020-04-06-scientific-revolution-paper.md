@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Copernicus (1543) to Newton (1727)- A Scientific Revolution
+title:  Copernicus to Newton - A Scientific Revolution during the years 1543-1727
 tags: [ Scientific Revolution, Newton, history, philosophy]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/scientific-revolution-paper/galileo.png

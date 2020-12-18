@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Graph Search Algorithms 2'
+title: 'Graph Search Algorithms 2: UCS and A*'
 tags: [algorithms, graphs]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
@@ -8,7 +8,7 @@ featured: false
 hidden: false
 ---
 
-This is a collection of algorithms programmed in an Artificial Intelligence class. While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. Uniform Cost Search, and A star. The algorithms are demonstrated on a weighted undirected graph of connected cities, as well as a maze that is represented as a matrix of binary values.
+This is the second set of a series of graph search algorithms I will examine. These algorithms improve upon BFS and DFS to create more efficient and powerful search methods. Here, two informed graph search methods-Uniform Cost Search and A star-will be described and programmed. The algorithms are demonstrated on two different weighted undirected graphs and to find the optimal path on a maze-like map.
 
 ## Uniform Cost Search
 ```
@@ -179,5 +179,5 @@ DFS Solution = [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), 
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/bfs_maze.png)
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/dfs_maze.png)
 
-
+These algorithms were originally programmed in an Artificial Intelligence class in Fall 2020 and improved/modified for this post.
 
