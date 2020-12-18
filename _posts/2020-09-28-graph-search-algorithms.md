@@ -4,14 +4,17 @@ title: 'Graph Search Algorithms'
 tags: [algorithms, graphs]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
-featured: true
+featured: false
 hidden: true
 ---
 
-This is a collection of algorithms programmed in an Artificial Intelligence class. While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. Included traversal algorithms are Breadth First Search, Depth First Search, Uniform Cost Search, and A star. The algorithms are demonstrated on a weighted undirected graph of connected cities, as well as a maze that is represented as a matrix of binary values.
+This is the first set of a series of graph search algorithms programmed in an Artificial Intelligence class. While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. I begin here by describing and programming two uninformed search methods: breadth first search and depth first search. Both graph searches are complete, but not necessarily optimal. The algorithms are demonstrated by finding solutions to a graph of connected cities as well as a maze.
+
 
 ## Breadth First Search
-<pre><code class="language-python">var Token = _.Token = function(type, content, alias, matchedStr, greedy) {
+In Breadth-first search (BFS), the root node is expanded first, then the successors of the root, then the successors of the successors of the root, and so on, until the goal is reached. BFS finds the shallowest path to each node from the frontier, so it is best used on graphs where the goal is close to the start. For example, it could be useful when finding close connections on social media. BFS is optimal when all path lengths are equal. A queue (FIFO) is used to implement BFS to expand the shallowest nodes first. The space complexity of BFS is exponential, $O(b^d)$., where b is the branching factor and d is the depth of the solution.
+
+<pre><code class="language-python">
 def breadth_first(start, goal, state_graph, return_cost=False):
     frontier = [start]
     visited = [start]
@@ -49,50 +52,13 @@ def breadth_first(start, goal, state_graph, return_cost=False):
                         solution_cost = step_cost*(len(solution))
                     return solution, solution_cost
     return 0
-};</code></pre>
+</code></pre>
 
-```
-def breadth_first(start, goal, state_graph, return_cost=False):
-    frontier = [start]
-    visited = [start]
-    parent = {start:None}
-    
-    if start == goal:
-        solution = path(parent, goal)
-        if(return_cost == False):
-            return solution
-        else:
-            try:
-                solution_cost = pathcost(solution, state_graph)
-            except:
-                solution_cost = 0
-            return solution, solution_cost
-        
-    while frontier:
-        currNode = frontier.pop(0)
-
-        for child in state_graph[currNode]:
-            if child not in visited:
-                visited.append(child)
-                parent[child] = currNode
-                frontier.append(child)
-            if child == goal:
-                bfs_path = get_path(start, goal, parent)
-                solution = path(bfs_path, goal)
-                if(return_cost==False):
-                    return solution
-                else:
-                    try:
-                        solution_cost = pathcost(solution, state_graph)
-                    except:
-                        step_cost = 1
-                        solution_cost = step_cost*(len(solution))
-                    return solution, solution_cost
-    return 0
-```
 
 ## Depth First Search
-```
+Depth-first search (DFS) traverses down a branch to a node furthest from the root before backtracking. For this reason, it is better when used on searches for which the goal is far from the start. It is very similar to a BFS, but is implemented using a stack (LIFO), so it the deepest nodes will be expanded first. DFS can also be implemented recursively. Since DFS only needs to store a single path from the root to a leaf node, the standard DFS actually has a much better space complexity than BFS, $O(bm)$, where m is the maximum depth of any node. Unfortunately, the algorithm fails in the case of an infinite-depth space; as a result, it is non-optimal.
+
+<pre><code class="language-python">
 def depth_first(start, goal, state_graph, return_cost=False):
     parent = {start:None}
     frontier = [start]
@@ -130,166 +96,31 @@ def depth_first(start, goal, state_graph, return_cost=False):
                             solution_cost = step_cost*(len(solution))
                         return solution, solution_cost
     return 0
-```
-
-## Uniform Cost Search
-```
-def uniform_cost(start, goal, state_graph, return_cost=False, return_nexp=False):
-    parent = {start:None}
-    frontier = Frontier_PQ(start, 0)
-    visited = [start]
-    found_path = []
-    nodes_expanded = 0
-    
-    while frontier.q:
-        if not frontier.q:
-            print("Failure!")
-            return
-        currNode = frontier.pop() #pop lowest cost node
-        currCity = currNode[1]
-        cost = currNode[0]
-        found_path = found_path + [currCity]
-        if currNode[1] not in visited:
-            visited.append(currNode[1])
-        
-        if currCity == goal:
-            ucs_path = get_path(start, goal, parent)
-            solution = path(ucs_path, goal)
-            solution_cost = cost
-            solution_cost2 = pathcost(solution, state_graph)
-            if solution_cost != solution_cost2:
-                print("Failure")
-                return
-            nodes_expanded = len(visited)-1
-            if(return_cost==False and return_nexp==False):
-                return solution
-            elif(return_cost==True and return_nexp==False):
-                return [solution, solution_cost]
-            elif(return_cost==False and return_nexp==True):
-                return [solution,None ,nodes_expanded]
-            elif(return_cost==True and return_nexp==True):
-                return [solution, solution_cost, nodes_expanded]
-
-        for child in state_graph[currNode[1]]:
-            child_cost = state_graph[currNode[1]][child]
-            ttl_cost = cost+child_cost
-            childNode = (cost, child)
-            if (child not in visited) and (child not in frontier.states): #frontier.states
-                frontier.add(child, ttl_cost)
-                frontier.states[child] = ttl_cost
-                parent[child]=currCity
-            elif (child in frontier.states) and (ttl_cost < frontier.states[child]):
-                frontier.replace(child, ttl_cost)
-                frontier.states[child] = ttl_cost
-                parent[child]=currCity
-    return 0
-```
-
-```
-# Takes instantiation arguments state, cost
-# start is the initial state(e.g. start='chi'), cost is the initial path cost
-class Frontier_PQ:
-    #instantiation arguments
-    def __init__(self, start, cost):
-        self.start = str(start)
-        self.cost = str(cost)
-        self.states = {}
-        self.q = [(cost,start)]
-        heapq.heapify(self.q)
-    
-    def add(self, state, cost):
-        heapq.heappush(self.q,(cost, state))
-        return
-    
-    def pop(self):
-        lowest_cost_node = heapq.heappop(self.q)
-        state = lowest_cost_node[1]
-        cost = lowest_cost_node[0]
-        return lowest_cost_node
-    
-    def replace(self, state, cost):
-        heapq.heapreplace(self.q, (cost, state))
-        return
-```
-
-## $A^*$ Search
-```
-def astar_search(start, goal, state_graph, heuristic, return_cost=False, return_nexp=False):
-    parent = {start:None}
-    frontier = Frontier_PQ(start, 0)
-    visited = [start]
-    found_path = []
-    nodes_expanded = 0
-    
-    while frontier.q:
-        if not frontier.q:
-            print("Failure!")
-            return
-        currNode = frontier.pop() #pop lowest cost node
-        currCity = currNode[1]
-        cost = currNode[0]+heuristic(currNode[1])
-        found_path = found_path + [currCity]
-        nodes_expanded +=1
-        if currNode[1] not in visited:
-            visited.append(currNode[1])
-        
-        if currCity == goal:
-            astar_search = get_path(start, goal, parent)
-            solution = path(astar_search, goal)
-            solution_cost = pathcost(solution, state_graph)
-            nodes_expanded = len(visited)-1
-            if(return_cost==False and return_nexp==False):
-                return solution
-            elif(return_cost==True and return_nexp==False):
-                return [solution, solution_cost]
-            elif(return_cost==False and return_nexp==True):
-                return [solution,None ,nodes_expanded]
-            elif(return_cost==True and return_nexp==True):
-                return [solution, solution_cost, nodes_expanded]
-
-        for child in state_graph[currNode[1]]:
-            child_cost = state_graph[currNode[1]][child]
-            ttl_cost = cost+child_cost
-            childNode = (cost, child)
-            if (child not in visited) and (child not in frontier.states): #frontier.states
-                frontier.add(child, ttl_cost)
-                frontier.states[child] = ttl_cost
-                parent[child]=currCity
-            elif (child in frontier.states) and (ttl_cost < frontier.states[child]):
-                frontier.replace(child, ttl_cost)
-                frontier.states[child] = ttl_cost
-                parent[child]=currCity
-    return 0
-```
-```
-def heuristic_sld_providence(state):
-    return sld_providence[state]
-```
+</code></pre>
 
 ## Usage
-Run all of the algorithms above on a weighted graph of US cities. 
+
+BFS and DFS are demonstrated on a graph of US cities. Note that while the paths between nodes have costs, the path costs are not used by either algorithm when selecting nodes to visit, only for calculating the final found path cost. The graph is represented programmatically as a dictionary.
+
 ![us map distances]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/us_map_distances.png)
 ![us map times]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/us_map_times.png)
-Find the optimal path from Chicago to New York using two different weights for the graph, distances and times.
 
+Using the algorithms to find the optimal path from Chicago to New York using two different weights for the graph, distances and times:
+
+Distances:
 ```
 Breadth First Path = ['chi', 'det', 'buf', 'syr', 'new'] , Distance (miles) = 943
 Depth First Path = ['chi', 'ind', 'col', 'pit', 'bal', 'phi', 'new'] , Distance (miles) = 988
-Uniform Cost Search Path = ['chi', 'cle', 'pit', 'phi', 'new'] , Distance (miles) = 881
 ```
+
+Times:
 ```
 Breadth First Path = ['chi', 'det', 'buf', 'syr', 'new'] , Time (mins) = 955
 Depth First Path = ['chi', 'ind', 'col', 'pit', 'bal', 'phi', 'new'] , Time (mins) = 1110
-Uniform Cost Search Path = ['chi', 'cle', 'buf', 'syr', 'new'] , Time (mins) = 935
 ```
 
-Find the optimal path from Chicago to Providence.
-```
-Uniform Cost Search Path = ['chi', 'cle', 'buf', 'syr', 'bos', 'pro'] , Distance (miles) = 1046 , Nodes Expanded = 11
-A* Search Path = ['chi', 'cle', 'buf', 'syr', 'bos', 'pro'] , Distance (miles) = 1046 , Nodes Expanded = 10 
-```
+Now we use BFS and DFS on maze to get from the start at $(1,1)$ to the finish at $(10,10)$. Note that since the path costs are all equal, BFS finds the optimal solution in this case.
 
-Run BFS and DFS on a maze to get from start to finish.
 ```
 breadth_first((1,1), (10,10), maze_graph, True)
 depth_first((1,1), (10,10), maze_graph, True)
@@ -301,5 +132,40 @@ DFS Solution = [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), 
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/bfs_maze.png)
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/dfs_maze.png)
 
+### These helper functions are used in the algorithms above.
+
+<pre><code class="language-python">
+def path(previous, s): 
+    '''
+    `previous` is a dictionary chaining together the predecessor state that led to each state
+    `s` will be None for the initial state
+    otherwise, start from the last state `s` and recursively trace `previous` back to the initial state,
+    constructing a list of states visited as we go
+    '''
+    if s is None:
+        return []
+    else:
+        return path(previous, previous[s])+[s]
+
+def pathcost(path, step_costs):
+    '''
+    add up the step costs along a path, which is assumed to be a list output from the `path` function above
+    '''
+    cost = 0
+    for s in range(len(path)-1):
+        cost += step_costs[path[s]][path[s+1]]
+    return cost
+    
+    #path from destination to source
+def get_path(start, goal, parent):
+    invpath = {goal:parent[goal]}
+    found_path=dict()
+    while goal != start:
+        goal = parent[goal]
+        invpath[goal] = parent[goal]
+    for k in reversed(list(invpath.keys())):
+        found_path[k] = invpath[k]
+    return found_path
+</code></pre>
 
 
