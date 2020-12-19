@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Advanced Markdown tips"
+title:  "Disease Modeling using Markov Chains"
 tags: [ Jekyll, Tips ]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2018/7.jpg

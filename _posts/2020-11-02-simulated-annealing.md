@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Graph Search Algorithms 3: Simulated Annealing'
-tags: [algorithms, AI]
+tags: [algorithms, graphs, AI, optimization]
 featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/final_path.png
 featured_image: assets/images/posts/2020/simulated-annealing/final_path.png
 featured: true
@@ -10,28 +10,29 @@ hidden: true
 
 In this third series on graph search algorithms, I use simulated annealing to find solutions to the traveling salesman problem.
 
-# Simulated Annealing
-Summarize Simulated Annealing, basic concepts
+# Simulated Annealing (SA)
+The goal of the traveling salesman problem is pretty simple: Find the shortest possible path between all n nodes in a graph and end at the start point. For this problem, the state space is discrete and there are (n-1)! possible solution paths (the problem is NP-Hard). The exponential rate of growth of the size of the state space makes it very difficult and in many cases not possible to find every solution path and then pick the optimal one. Simulated annealing is an optimization technique that avoids solving the state space to find a solution and works well with problems with discrete solution spaces. It is a probabilistic technique which takes a better solution always and a worse solution with some probability *p*; doing so makes it an algorithm which gets out of local minimums very effectively. Because it does not solve the state space, SA is not necessarily optimal and often gives solutions that are close to the global minimum for practical purposes. The algorithm is named after the technique in metallurgy, which uses heating and cooling to reduce defects in metals. A metal is heated and cooled iteratively and then checked to see if its defects were reduced. Each heat/cool cycle is analogous to checking a new solution and seeing if it is better or worse (and sometimes taking a worse solution) in the SA algorithm.
+
+SA begins with some initial solution and for each iteration, the algorithm finds a neighboring solution and always takes the solution if it is better than the current solution. If the neighboring solution is worse than the current solution, it is accepted with probability *p*, where *p* decays in time. This method creates a balance between exploration and exploitation. The algorithm is able to explore and get out of local minimums by taking worse solutions that may represent a better long term gain with a higher probability, then towards the end once it is (hopefully) close to the global minimum the probability it takes worse solutions is very low. The algorithm will also be given a temperature function *T* which determines how large of a change is allowed. Large changes are allowed at the beginning, but only smaller changes are allowed towards the end. Then, probability and temperature are related so that the algorithm takes solutions that are slightly worse with a greater probability than solutions that are MUCH worse. 
 
 ## Temperature and Probability Functions
 
 ### Temperature Function
 The temperature function chosen was $T(t)=\frac{C}{(t+1)^p}$, where $t$ is time and $C$ and $p$ are tunable constants. As $t\rightarrow n_{iterations}$, the temperature will decay to 0. The temperature tells us how far from the current state we are allowed to propose new candidates. Thus, a decaying temperature allows for very large changes initially and only small, local changes towards the end. A high temperature means to explore states all over the function and check them. Since the value $C \approx$ the largest value of the temperature, the value $C$ represents the largest change we are allowed to make at the beginning. I found $C\approx\sqrt{57}\approx7$ seemed to work well for 100,000 iterations through trial and error. Then, I adjusted $p$ so that $p_{accept}$ looked reasonable (explanation below). The choice for $p$ was dependent on the max number of iterations.
 
-
 ### Probability of Acceptance Function
 The probability of acceptance function chosen was $p_{accept}=e^{\frac{\Delta E}{T(t)}}$, where $\Delta E = \text{objective_function}(current state) - \text{objective_function}(proposed state)$ and $T(t)$ is the temperature function. Note that when the cost of the current state is better than the cost of the proposed state $\Delta E >0$ and when the cost of the proposed state is better than the cost of the current state, $\Delta E <0$. Therefore, $p_{accept}>1$ (and grows exponentially) when the current state is better and $0<p_{accept}\le1$ and decays when the proposed state is better than or equal to the current state. Additionally, note that (if $\Delta E <0$) the worse the proposed state is compared to the current state, the faster $p_{accept}$ decays; this means that the probability of acceptance of *much* worse proposed solutions will decrease much more quickly than the probability of acceptance of *slightly* worse proposed solutions (though the probabilities of both still decrease).
 
-The behavior of this function, in theory, depends on the sign of $\Delta E$. However since I really only care about the value of $p_{accept}$ when the proposed state is worse than the current state (otherwise it is just 1), I only consider the case when $\Delta E < 0 \Rightarrow p_{accept}=e^{\frac{-|\Delta E|}{T(t)}}$. 
+The behavior of this function, in theory, depends on the sign of $\Delta E$. However since I really only care about the value of $p_{accept}$ when the proposed state is worse than the current state (otherwise it is just 1), I only consider the case when $\Delta E < 0 \Rightarrow p_{accept}=e^{\frac{-|\Delta E|}{T(t)}}$.
 
 In the graphs below, I chose to test $p_{accept}$ with a $\Delta E = 0.2$. Through trial and error, I learned that a smooth decay of $p_{accept}$ (i.e. didn't decay too quickly) worked best. Additionally, I found that if the difference between the proposed state and the current state is a path cost of 0.2, a probability of acceptance somewhere between 10% and 20% worked best.
 
 This resulted in a choice of $C=7$ and $P=0.37$ for $n_{iterations} = 100,000$ and a choice of $C=4$ and $P=0.45$ for $n_{iterations} = 10,000$. The temperature functions and probability of acceptance functions for the two choices of stopping iterations are plotted below.
 
-\\ Plot of probability and Temp functions
+![prob-temp-functions]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/prob_temp_funcs.png)
 
 ## Annealing Implementation
-First, I define an annealing class with attributes _________.
+First, I define an annealing class with attributes <code> initial_state </code>, <code> current_state </code>, <code> best_state </code>, <code> objective_function </code>, and <code> schedule_function </code>.
 
 <pre><code class="language-python">
 class state:
@@ -42,20 +43,12 @@ class state:
                        
 class problem_annealing:
     # Define the problem
-    # initial state - give a path that visits all the nodes. This will just be the list of nodes how they are.
-    # current state - the current path we are checking
-    # best state - the best state we have found so far
-    # objective function - minimize the total path cost, this will be the path_cost() function.
-    # choices of action - schedule function and probability of acceptance function
-    # information we need to choose our action
-
-    def __init__(self, initial, best, objective_function, schedule_function, stepsize):
-        self.initial_state = initial
-        self.current_state = initial
-        self.best_state = best
-        self.objective_function = objective_function
-        self.stepsize = stepsize
-        self.schedule_function = schedule_function
+    def __init__(self, initial, best, objective_function, schedule_function):
+        self.initial_state = initial # a path that visits all the nodes. This will just be the list of nodes how they are.
+        self.current_state = initial # the current path we are checking
+        self.best_state = best # the best state we have found so far
+        self.objective_function = objective_function # minimize the total path cost, this will be the path_cost() function.
+        self.schedule_function = schedule_function # schedule function and probability of acceptance function, the information we need to choose our action
         
 #for annealing: moves are somehow random: we will use temperature schedule to change candidates for all_moves
     def random_move(self):
@@ -192,7 +185,7 @@ solution = simulated_annealing(problem_from_class, n_iter=1e5) #100,000 iteratio
 print(solution.value)
 end_time = timer.time()
 print('time elapsed', end_time-start_time)
-# print(solution.path, solution.value)
+# print(solution.path, solution.value)</code></pre>
 </code></pre>
 <pre><code class="language-python">
 105.39076734189328
@@ -201,3 +194,28 @@ time elapsed 16.607876777648926
 
 
 ## Conclusions
+An analysis of my implementation of the annealing function is done below.
+
+![optimize temp and prob funcs]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions1_temp_prob.png)
+
+Above is an analysis of various temperature and probability functions. The pair of graphs on the left shows the plot of changing p values for a constant C, while the set on the right shows the plot of changing C values for a constant p. The best values of $C$ and $p$ seemed to occur at $C=7$ and $P=0.37$ for $n_{iterations} = 100,000$ and a choice of $C=4$ and $P=0.45$ for $n_{iterations} = 10,000$.
+While running the tests though, there seemed to be lots of variation in results and often due to randomness, many values of C and p would return very good path costs. These seemed to be the best on average though.
+The values for $n=1e4$ were found using an average of 10 annealing trials, while the values for $n=1e5$ were found using only 1 trial. 
+
+![path cost vs time]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions2_pathcost_vs_time.png)
+
+The average path cost decreased linearly as the max allowed number of iterations increased. This was expected. Note the x-axis is plotted on a log-scale and the y-axis is plotted on a linear scale. The path cost was the average path cost over 10 annealing trials except for those with a stopping iteration $n_{iterations}=1e5, 5e5, 1e6$ for which only a single trial was done.
+
+![time vs num iterations]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions3_time_vs_numiter.png)
+
+The time taken to run the annealing algorithm increased linearly as the max allowed number of iterations increased. This was expected. Note the x-axis is plotted on a log-scale and the y-axis is plotted on a linear scale. The time taken was the average time over 10 annealing trials except for those with a stopping iteration $n_{iterations}=1e5, 5e5, 1e6$ for which only a single trial was done.
+
+![pathcost convergence]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions4_pathcost_conv.png)
+
+This graph shows the convergence of the annealing algorithm over time for a single trial where the maximum number of iterations was $1e5$. The path cost converges rather quickly and possibly not this many iterations was required.
+
+![final path]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions5_final_path.png)
+
+The initial path (arbitrarily in the order given) and the best solution path found are plotted above. While it does not really matter where we start, the start node is colored red just to give a the user a visual start and end point. The final solution had a path cost of $104.266$, a 33% improvement from the initial path shown. While there is no way to know whether this is the guaranteed optimal solution (without searching the entire $n!$ state space), upon visual inspection, the path looks at least close to optimal and not horribly wrong.
+
+Ultimately, the annealing algorithm was very successful and was able to find a good solution without searching the entire state space. Some drawbacks were that it took a rather long time to converge ($100,000$ iterations took about 15 seconds, while $10,000$ iterations took about 1.5 seconds) and that it took some time and energy to find the constants for the temperature function. There were too many open parameters to tweak and that seemed to be different as the maximum stopping iteration changed. To improve my implementation of the algorithm, I would consider sizing my random changes in random_move based on the size of the temperature $T(t)$. This would make more effective use of the number of iterations, because the size of random change being made would be more likely to make an accepted change. Additionally, I would consider changing and optimizing how I am making random changes. Right now, I am only reversing a random subarray of the solution array and other changes might be more effective and efficient.

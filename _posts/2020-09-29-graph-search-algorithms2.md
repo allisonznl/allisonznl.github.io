@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Graph Search Algorithms 2: UCS and A*'
-tags: [algorithms, graphs]
+tags: [algorithms, graphs, AI, optimization]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
 featured: false
