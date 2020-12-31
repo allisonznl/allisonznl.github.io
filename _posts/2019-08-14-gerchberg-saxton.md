@@ -69,9 +69,6 @@ Below are example retrievals for when the algorithm is given the incorrect start
   <img src="a11isonliu.github.io/assets/images/posts/2019/GS/pretty1.jpg" width="100" />
 </p>
 
-{: style="text-align:center"}
-![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg) | ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty1.jpg)
-
 #### Sampling on one side of the focus
 For EUV OAM beams, like the in the Science article, optics have very poor efficiency. Without optics, we cannot get a full profile of the focal point of these beams. Additionally, for many projects it is difficult to access the focal point (say, if it inside a fiber), so it would be beneficial to test if the algorithm works when given only data from planes on one side of the focus. Preliminary tests have shown this looks promising.
 
