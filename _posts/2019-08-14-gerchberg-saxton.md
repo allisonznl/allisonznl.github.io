@@ -31,7 +31,7 @@ OAM beams are laser beams with a "twisted wavefront", meaning they contain angul
 {: style="text-align:center"}
 ![oam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/oam_wiki.jpg)
 
-<p align="center"> [(Source)](https://creativecommons.org/licenses/by-sa/3.0) </p>
+->[(Source)](https://creativecommons.org/licenses/by-sa/3.0)<-
 
 ## The algorithm
 #### Theory
