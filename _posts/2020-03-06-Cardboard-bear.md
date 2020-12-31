@@ -30,4 +30,4 @@ Final:
 
 ## Laser Cutter Settings:
 To cut through the 1/8" thick cardboard, the vector settings for the Epilog Laser Cutter were 50% speed, 100% power, and a frequency of 50.
-To engrave the 1/8" thick cardboard, the vector settings were 100% speed, 50% power, and a frequency of 50.
+To engrave the 1/8" thick cardboard, the vector settings were 100% speed, 50% power, and a frequency of 50. These settings were determined using trial and error.

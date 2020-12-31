@@ -2,7 +2,7 @@
 layout: post
 title: 'Graph Search Algorithms 3: Simulated Annealing'
 tags: [algorithms, graphs, AI, optimization]
-featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/final_path.png
+featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/thumbnail.png
 featured_image: assets/images/posts/2020/simulated-annealing/final_path.png
 featured: true
 hidden: true
@@ -23,7 +23,7 @@ The temperature function chosen was $T(t)=\frac{C}{(t+1)^p}$, where $t$ is time 
 ### Probability of Acceptance Function
 The probability of acceptance function chosen was $p_{accept}=e^{\frac{\Delta E}{T(t)}}$, where $\Delta E = \text{objective_function}(current state) - \text{objective_function}(proposed state)$ and $T(t)$ is the temperature function. Note that when the cost of the current state is better than the cost of the proposed state $\Delta E >0$ and when the cost of the proposed state is better than the cost of the current state, $\Delta E <0$. Therefore, $p_{accept}>1$ (and grows exponentially) when the current state is better and $0<p_{accept}\le1$ and decays when the proposed state is better than or equal to the current state. Additionally, note that (if $\Delta E <0$) the worse the proposed state is compared to the current state, the faster $p_{accept}$ decays; this means that the probability of acceptance of *much* worse proposed solutions will decrease much more quickly than the probability of acceptance of *slightly* worse proposed solutions (though the probabilities of both still decrease).
 
-The behavior of this function, in theory, depends on the sign of $\Delta E$. However since I really only care about the value of $p_{accept}$ when the proposed state is worse than the current state (otherwise it is just 1), I only consider the case when $\Delta E < 0 \Rightarrow p_{accept}=e^{\frac{-|\Delta E|}{T(t)}}$.
+The behavior of this function, in theory, depends on the sign of $\Delta E$. However since I really only care about the value of $p_{accept}$ when the proposed state is worse than the current state (otherwise it is just 1), I only consider the case when $\Delta E < 0 \Rightarrow p_{accept}=e^{\frac{\Delta E}{T(t)}}$.
 
 In the graphs below, I chose to test $p_{accept}$ with a $\Delta E = 0.2$. Through trial and error, I learned that a smooth decay of $p_{accept}$ (i.e. didn't decay too quickly) worked best. Additionally, I found that if the difference between the proposed state and the current state is a path cost of 0.2, a probability of acceptance somewhere between 10% and 20% worked best.
 
