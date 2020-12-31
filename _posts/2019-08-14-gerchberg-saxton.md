@@ -21,12 +21,14 @@ OAM beams are useful in optical communications, imaging, magnetics, quantum info
 
 Beam-characterization is a necessity for all experiments involving a laser beam and phase contains powerful information that is necessary to completely characterize a laser beam. In order to completely characterize a laser beam (or any light source for that matter), we need both intensity and phase. An intensity profile is relatively easy to obtain; we can simply shine the laser on a camera which will produce a matrix of values. Obtaining phase information is more complicated and involves the use of algorithms.
 
+{: style="text-align:center"}
 ![simulated retrieval]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/retrieval.jpg)
 
 ## OAM beams
 
 OAM beams are laser beams with a "twisted wavefront", meaning they contain angular momentum that is dependent on spatial distribution (as opposed to polarization- angular momentum that is dependent on the quantum spin of a photon).
 
+{: style="text-align:center"}
 ![oam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/oam_wiki.jpg)
 
 [(Source)](https://creativecommons.org/licenses/by-sa/3.0)
@@ -35,49 +37,60 @@ OAM beams are laser beams with a "twisted wavefront", meaning they contain angul
 #### Theory
 Having intensity and phase information in one plane allows the propagation of the beam to another plane. In other words, if information about phase and intensity is obtained at one point along the laser beam path, then we also have information about the laser beam at ANY other point. Furthermore, having intensity information in two different planes allows for the calculation of the phase in the two planes.
 
+{: style="text-align:center"}
 ![GS background]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/GSbackground.jpg)
 
 The original [Gerchberg-Saxton algorithm](https://en.wikipedia.org/wiki/Gerchberg%E2%80%93Saxton_algorithm) uses an image at the focal point and an image infinitely far away from the focal point to iteratively retrieve the phase of the beam.
 
 Our algorithm uses an over-sampled intensity measurement. We take 9-30 images with at least half of the sampled points occurring within one Rayleigh range of the focal point (as recommended in the ISO standard for M^2) instead of only two. This oversampling ensures a much more robust and accurate characterization of the beam. There is an optimal solution and additional degrees of freedom that can be used to confirm the result. We also apply a phase perturbation of L = +- 1/2 every 10 iterations for the first 40 iterations, which helps the algorithm to converge more quickly. It also helps to prevent the GS algorithm from getting stuck in local minima.
 
+{: style="text-align:center"}
 ![GSalg]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/GSalg.jpg)
 
 An example retrieval looks like this, with an intensity profile plotted on the left, the retrieved phase overlaid on top of the intensity in the center, and the error on the right.
+
+{: style="text-align:center"}
 ![retrieval experimenta]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/retrieval_exp.jpg)
 
 #### Handling Wavelength
 In original GS and our main algorithm, the retrieval algorithm must know the wavelength of the laser. For a single wavelength, we found the algorithm can reliably determine the wavelength to within about 5 nm.
 
+{: style="text-align:center"}
 ![perfect beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_perfectbeam.jpg)
 
 For multiple wavelengths, the algorithm does not perform very well.
 
+{: style="text-align:center"}
 ![multicol beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_multbeam.jpg)
 
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
+{: style="text-align:center"}
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg)
+{: style="text-align:center"}
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty1.jpg)
 
 #### Sampling on one side of the focus
 For EUV OAM beams, like the in the Science article, optics have very poor efficiency. Without optics, we cannot get a full profile of the focal point of these beams. Additionally, for many projects it is difficult to access the focal point (say, if it inside a fiber), so it would be beneficial to test if the algorithm works when given only data from planes on one side of the focus. Preliminary tests have shown this looks promising.
 
+{: style="text-align:center"}
 ![light fiber]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/lightfiber.jpg)
 
 (Source: ThorLabs)
 
 Example Results:
 
+{: style="text-align:center"}
 ![half images]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/half_imgs.jpg)
 
 
 ## Comparison to Other Techniques
 * **M^2** uses the same information as the GS algorithm to compute beam divergence characteristics (2 numbers)
-
+{: style="text-align:center"}
 ![m2 schematic]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/m2.jpg)
 * **Shack-Hartmann** is an expensive (~$4000) wavefront sensor that can measure OAM content but has low spatial resolution and relatively narrow useful wavelength range (cannot be used in VUV/EUV)
 
+{: style="text-align:center"}
 ![shack hartmann]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/shackhartmann.jpg)
 (Source: ThorLabs)
 
@@ -95,7 +108,6 @@ Example Results:
 ## Code Snippets
 #### GS Algorithm
 <pre><code class="language-MATLAB">
-
 % MODIFIED 6/9/2019
 
 function [Amps_rtrv, Ints_rtrv, Phase_rtrv] = GSPhaseRetrieval(images, locations, beta, numIterations, wavelength, pixelsize)
@@ -146,7 +158,6 @@ for i=1:numIterations
 end
 
 %%% Calculate all beams by propagating first image
-%%% preallocate
 I = zeros(length(y), length(x), length(locations));
 P = zeros(length(y), length(x), length(locations));
 % calcbeams = complex(zeros(size(beams)));
@@ -156,7 +167,6 @@ for i = 1:Nimages
     I(:,:,i) = abs(beams(:,:,i).^2);
     P(:,:,i) = angle(beams(:,:,i));
 end
-toc
 
 % Save the output.
 Amps_rtrv  = beams;
@@ -165,7 +175,7 @@ Phase_rtrv = P;
 </code></pre>
 
 #### Simulate beam intensity
-(number of pixels <code>Npixels</code> and <code>pixelsize</code> in m must be specified)
+The number of pixels <code>Npixels</code> and <code>pixelsize</code> (in m) must be specified.
 
 <pre><code class="language-MATLAB">
 w0 = 40e-6;    % m, HW1/e2 spot size
@@ -181,4 +191,4 @@ E = (sqrt(2)*r).^abs(l)*(1).*exp(-r.^2).*exp(1i*l*PHI); %a matrix describing the
 
 
 # Acknowledgements
-This project was funded by STROBE and the NSF and was done as part of the STROBE SURS Program. Thank you to David Couch, Kevin Dorney, Michael Tanksalvala, Matthew Jacobs, Dr. William Peters, Prof. Margaret Murnane, Jatinder Sampathkumar, Sadie Stutzman, and Prof. Nicole Labbe.
+This project was funded by STROBE and the NSF and was done as part of the STROBE SURS Program. Thank you to David Couch, Kevin Dorney, Michael Tanksalvala, Matthew Jacobs, Kate Uchida, Dr. William Peters, Prof. Margaret Murnane, Jatinder Sampathkumar, Sadie Stutzman, and Prof. Nicole Labbe.
