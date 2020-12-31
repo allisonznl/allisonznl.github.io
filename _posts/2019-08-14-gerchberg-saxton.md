@@ -8,7 +8,7 @@ featured: true
 hidden: true
 ---
 
-This summer, I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). Ultimately, my modified version of the algorithm was able to gather more information and achieve a higher resolution than traditional characterization methods using the same data set. The algorithm was used by members of my lab group to analyze their laser beams and resulted in a [publication](https://doi.org/10.1126/science.aaw9486) in Science Magazine. I worked with my graduate student mentor of 3 years, David Couch, but programs written are entirely my own.
+This summer, I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). Ultimately, my modified version of the algorithm was able to gather more information and achieve a higher resolution than traditional characterization methods using the same data set. The algorithm was used by members of my lab group to analyze their laser beams and resulted in a [publication](https://doi.org/10.1126/science.aaw9486) in Science Magazine. I worked with a graduate student mentor, David Couch, who mentored me for 3 years. Programs written for this project are either entirely my own or I was a significant contributor to.
 
 {: style="text-align:center"}
 ![science cover]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/science_cover.jpg)
@@ -91,6 +91,94 @@ Example Results:
 * Analyzing the algorithm performance
 * Exploring the capabilities of the algorithm for multi-wavelength handling
 * Optimizing for speed and accuracy, and extending this to handling images from only one side of the focus
+
+## Code Snippets
+#### GS Algorithm
+<pre><code class="language-MATLAB">
+
+% MODIFIED 6/9/2019
+
+function [Amps_rtrv, Ints_rtrv, Phase_rtrv] = GSPhaseRetrieval(images, locations, beta, numIterations, wavelength, pixelsize)
+
+%%% Rename Variables
+
+lambda  = wavelength*1e-9;  %convert nm to m
+y = pixelsize*1e-6*(1:imssize(1));  %convert um to m
+x = pixelsize*1e-6*(1:imssize(2));
+z = locations*1e-3; %convert mm to m
+images = images./sum(sum(images,1),2); %normalize images
+
+%%% Given I, z, wavelength
+amp = sqrt(abs(images));
+phase = 0;
+beams = complex(zeros(length(y),length(x),length(z)));
+beams = amp.* exp(1i*phase); %sets up first guess where phase = 0 at all points 
+amp1 = amp(:,:,1);
+
+beam1 = beams(:,:,1);  %initial guess
+
+error = nan(numIterations,1); %preallocate
+numPlanes = size(images,3);
+
+for i=1:numIterations
+    %%% Give a little OAM content
+    if i < 40 && mod(i,10) == 0
+        [Y,X] = ndgrid(y,x);
+        OAMmat = (X-mean(x)) + 1i*(Y-mean(y));
+        OAMmat = OAMmat./abs(OAMmat);
+        beams(:,:,1) = beams(:,:,1).*exp((mod(i/10,2)-0.5)*1i*angle(OAMmat)); %add pi/2 OAM content
+    end
+    rmsError = 0;
+    for n=2:numPlanes
+        beam = propagate_spw(beams(:,:,n-1), y, x, z(n)-z(n-1), lambda);  %%guess for each image
+        diff = amp(:,:,n) - abs(beam);
+        rmsError = rmsError + sqrt(mean(abs(diff(:)).^2));
+        beams(:,:,n) = (abs(beam)+diff*beta) .* exp(1i*angle(beam)); %replace guessed amplitude with measured amplitude
+        %beams(:,:,i+1) = propagate_spw(adjustedBeam, y, x, z(i+1)-z(i), wavelength);
+    end
+    
+    adjustedBeam1 = propagate_spw(beams(:,:,numPlanes), y, x, z(1)-z(numPlanes), lambda);
+    diff = amp1 - abs(adjustedBeam1);
+    beams(:,:,1) = (abs(adjustedBeam1)+diff*beta) .* exp(1i*angle(adjustedBeam1));
+        
+    rmsError = rmsError + sqrt(mean(abs(diff(:)).^2));
+    error(i) = rmsError;
+end
+
+%%% Calculate all beams by propagating first image
+%%% preallocate
+I = zeros(length(y), length(x), length(locations));
+P = zeros(length(y), length(x), length(locations));
+% calcbeams = complex(zeros(size(beams)));
+for i = 1:Nimages
+    beams(:,:,i) = propagate_spw(beams(:,:,1),y,x,(z(i)-z(1)),lambda);
+    error(i) = sum(sum(abs(images(:,:,i)-abs(beams(:,:,i).^2))));
+    I(:,:,i) = abs(beams(:,:,i).^2);
+    P(:,:,i) = angle(beams(:,:,i));
+end
+toc
+
+% Save the output.
+Amps_rtrv  = beams;
+Ints_rtrv  = I;
+Phase_rtrv = P;
+</code></pre>
+
+#### Simulate beam intensity
+(number of pixels <code>Npixels</code> and <code>pixelsize</code> in m must be specified)
+
+<pre><code class="language-MATLAB">
+w0 = 40e-6;    % m, HW1/e2 spot size
+x = ((1:Npixels)-mean([1,Npixels]))*pixelsize; %converts to matrix to units of meters and sets the center as 0
+y = ((1:Npixels)-mean([1,Npixels]))*pixelsize;
+[Y,X] = ndgrid(y,x); %creates 2 matrices, one describing x-distances from 0 and one describing y-distances from 0
+RHO = sqrt(Y.^2 + X.^2);
+PHI = atan(Y./X) + pi*(X<0) + pi/2;
+r = RHO/w0;
+
+E = (sqrt(2)*r).^abs(l)*(1).*exp(-r.^2).*exp(1i*l*PHI); %a matrix describing the field at the focal point
+</code></pre>
+
 
 # Acknowledgements
 This project was funded by STROBE and the NSF and was done as part of the STROBE SURS Program. Thank you to David Couch, Kevin Dorney, Michael Tanksalvala, Matthew Jacobs, Dr. William Peters, Prof. Margaret Murnane, Jatinder Sampathkumar, Sadie Stutzman, and Prof. Nicole Labbe.
