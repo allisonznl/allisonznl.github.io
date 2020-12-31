@@ -64,6 +64,7 @@ For multiple wavelengths, the algorithm does not perform very well.
 
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
+{: style="text-align:center"}
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg) | ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty1.jpg)
 
 #### Sampling on one side of the focus
