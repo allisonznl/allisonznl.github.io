@@ -64,6 +64,11 @@ For multiple wavelengths, the algorithm does not perform very well.
 
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
+<p float="center">
+  <img src="a11isonliu.github.io/assets/images/posts/2019/GS/pretty2.jpg" width="100" />
+  <img src="a11isonliu.github.io/assets/images/posts/2019/GS/pretty1.jpg" width="100" />
+</p>
+
 {: style="text-align:center"}
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg) | ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty1.jpg)
 
