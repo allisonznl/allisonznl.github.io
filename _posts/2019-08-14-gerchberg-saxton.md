@@ -55,12 +55,12 @@ An example retrieval looks like this, with an intensity profile plotted on the l
 In original GS and our main algorithm, the retrieval algorithm must know the wavelength of the laser. For a single wavelength, we found the algorithm can reliably determine the wavelength to within about 5 nm.
 
 {: style="text-align:center"}
-![perfect beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_perfectbeam.jpg)
+![perfect beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_perfectbeam.png)
 
 For multiple wavelengths, the algorithm does not perform very well.
 
 {: style="text-align:center"}
-![multicol beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_multbeam.jpg)
+![multicol beam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/wavelength_multbeam.png)
 
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
