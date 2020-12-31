@@ -31,7 +31,9 @@ OAM beams are laser beams with a "twisted wavefront", meaning they contain angul
 {: style="text-align:center"}
 ![oam]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/oam_wiki.jpg)
 
-->[(Source)](https://creativecommons.org/licenses/by-sa/3.0)<-
+<p style="text-align: center;">
+[(Source)](https://creativecommons.org/licenses/by-sa/3.0)
+</p>
 
 ## The algorithm
 #### Theory
@@ -65,18 +67,15 @@ For multiple wavelengths, the algorithm does not perform very well.
 
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
-<p align="center"> 
-![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg)
+->![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty2.jpg)
 ![wrong wavelength]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/pretty1.jpg)
-</p>
 
 #### Sampling on one side of the focus
 For EUV OAM beams, like the in the Science article, optics have very poor efficiency. Without optics, we cannot get a full profile of the focal point of these beams. Additionally, for many projects it is difficult to access the focal point (say, if it inside a fiber), so it would be beneficial to test if the algorithm works when given only data from planes on one side of the focus. Preliminary tests have shown this looks promising.
 
-<p align="center"> 
+{: style="text-align:center"}
 ![light fiber]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/lightfiber.jpg)
 (Source: ThorLabs)
-</p> 
 
 Example Results:
 
