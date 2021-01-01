@@ -6,7 +6,7 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png){:width=70% height=70%}
+![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png){:width=50% height=50%}
 
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
@@ -17,7 +17,7 @@ A raptor's motion can be modeled as
 
 $$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}  \text{     }  (Eq. 1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $\boldsymbol{x}_2= \sqrt{x^2+y^2}$.
+where if $\boldsymbol{x}=(x,y)$ then we define $||\boldsymbol{x}||_2= \sqrt{x^2+y^2}$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
@@ -115,7 +115,7 @@ Time caught by raptor 2, t = 0.4827413706853426
 Time caught by raptor 3, t = 0.6068034017008503
 ```
 
-SOLUTION:
+##### SOLUTION:
 
 {: style="text-align:center"}
 ![Dinosaur Attack Q2 Solution]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/solution.png)
