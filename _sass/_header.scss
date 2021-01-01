@@ -70,11 +70,16 @@
   text-transform: uppercase;
 }
 
-.site-description a:link,
+.site-description a:link
 .site-description a:visited,
-.site-description a:hover,
 .site-description a:active{
   color: $gray;
+  text-decoration: none;
+}
+
+.site-description a:hover{
+  color: $gray;
+  text-decoration: underline;
 }
 
 #menu-toggle {
