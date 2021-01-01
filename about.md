@@ -8,8 +8,8 @@ Allison Liu is a junior at the University of Colorado Boulder (expected graduati
 
 Her work has been published in *Science Magazine* and *Proceedings of the Combustion Institute*.
 
->I was taught that the way of progress was neither swift nor easy. <cite>Marie Curie</cite>
-
 Outside of programming, Allison volunteers weekly with [PISEC](https://www.colorado.edu/outreach/pisec/), an organization at CU Boulder which empowers grade-school students, largely of under-represented minorities, to become interested in STEM. She is part of the CU Women's Ultimate Frisbee team and loves rock climbing, hiking, and traveling. She is a routesetter at the CU Boulder Climbing gym.
 
 *Thank you for reading!*
+
+>That's what I think a meaningful life is - Living not for oneself, but for ones community. <cite>Ruth Bader Ginsburg</cite>
