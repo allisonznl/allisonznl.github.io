@@ -70,6 +70,13 @@
   text-transform: uppercase;
 }
 
+.site-description a:link,
+.site-description a:visited,
+.site-description a:hover,
+.site-description a:active{
+  color: $gray;
+}
+
 #menu-toggle {
   background-color: transparent;
   color: #fff;
