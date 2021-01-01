@@ -6,16 +6,16 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-![Dinosaur Attack Q2 Solution](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png))
+![Dinosaur Attack](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png))
 
 The problem above appears in an XKCD comic at https://xkcd.com/135/.
 
 ## Question 2
-Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2$.
+Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2 (1)$.
 
 A raptor's motion can be modeled as
 
-$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}$    $(1)$
+$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2} (2)$$
 
 where if $\boldsymbol{x}=(x,y)$ then we define $|| \boldsymbol{x}||_2= \sqrt{x^2+y^2}$.
 
@@ -23,7 +23,7 @@ The three raptor's each satisfy this ODE separately, but the $x$ and $y$ compone
 
 For simplicity, we assume the human runs in a constant direction and at a constant speed. Thus,
 
-$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{|| \boldsymbol{c}||_2}+ \boldsymbol{h}(0)$,    $(2)$
+$$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{|| \boldsymbol{c}||_2}+ \boldsymbol{h}(0)$$
 
 where $\boldsymbol{c} \in \mathbb{R}^2$ is an initial direction and $\boldsymbol{h}(0)$ is the human's initial position.
 
@@ -35,11 +35,15 @@ Define the human as "caught" when the raptor is within 0.01 m of the human. Spec
 
 We have $\boldsymbol{h}(0)=(0,0)$ since the human starts at the origin. $v_h=6$, the (max) velocity of the human.
 
-To determine $\boldsymbol{c}$ we have $y=6\sin(56)\approx 4.974$ and $x=6 \cos(56) \approx 3.355$. $c= (3.355,4.974)$. $||c||_2= \sqrt{3.355^2+4.974^2}=6$.
+To determine $\boldsymbol{c}$ we have $y=6\sin(56)\approx 4.974$ and $x=6 \cos(56) \approx 3.355$. 
+
+$$c= (3.355,4.974)$$
+$$||c||_2= \sqrt{3.355^2+4.974^2}=6$$
 
 Thus, $\boldsymbol{h}(t) = 6t\frac{(3.355,4.974)}{6} = (3.355t,4.974t)$.
 
-So Equation (1) becomes, $\frac{d \boldsymbol{r}}{dt} = F(t, \boldsymbol{r}) = v_r \frac{(3.355t,4.974t)- \boldsymbol{r}(t)}{||(3.355t,4.974t)- \boldsymbol{r}(t)||_2}$
+So Equation (1) becomes
+$$\frac{d \boldsymbol{r}}{dt} = F(t, \boldsymbol{r}) = v_r \frac{(3.355t,4.974t)- \boldsymbol{r}(t)}{||(3.355t,4.974t)- \boldsymbol{r}(t)||_2}$$
 
 <pre><code class="language-Python">
 import numpy as np
@@ -114,7 +118,7 @@ Time caught by raptor 3, t = 0.6068034017008503
 SOLUTION:
 
 {: style="text-align:center"}
-![Dinosaur Attack Q2 Solution](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/solution.png))
+![](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/solution.png))
 
 The human is caught by the injured raptor at <code>t = min(timeCaught) = 0.4772386193096548</code>
 
