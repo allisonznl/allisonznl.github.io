@@ -72,6 +72,8 @@
 
 .site-description a {
   color: $gray;
+  text-decoration: none !important;
+  text-decoration-color: $gray;
 }
 
 .site-description a:link,
