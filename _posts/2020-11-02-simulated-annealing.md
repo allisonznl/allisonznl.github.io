@@ -2,7 +2,7 @@
 layout: post
 title: 'Graph Search Algorithms 3: Simulated Annealing'
 tags: [algorithms, graphs, AI, optimization]
-featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/thumbnail1.png
+featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/cover_photo.png
 featured_image: assets/images/posts/2020/simulated-annealing/final_path.png
 featured: true
 hidden: true
@@ -204,14 +204,17 @@ Above is an analysis of various temperature and probability functions. The pair 
 While running the tests though, there seemed to be lots of variation in results and often due to randomness, many values of C and p would return very good path costs. These seemed to be the best on average though.
 The values for $n=1e4$ were found using an average of 10 annealing trials, while the values for $n=1e5$ were found using only 1 trial. 
 
+{: style="text-align:center"}
 ![path cost vs time]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions2_pathcost_vs_time.png)
 
 The average path cost decreased linearly as the max allowed number of iterations increased. This was expected. Note the x-axis is plotted on a log-scale and the y-axis is plotted on a linear scale. The path cost was the average path cost over 10 annealing trials except for those with a stopping iteration $n_{iterations}=1e5, 5e5, 1e6$ for which only a single trial was done.
 
+{: style="text-align:center"}
 ![time vs num iterations]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions3_time_vs_numiter.png)
 
 The time taken to run the annealing algorithm increased linearly as the max allowed number of iterations increased. This was expected. Note the x-axis is plotted on a log-scale and the y-axis is plotted on a linear scale. The time taken was the average time over 10 annealing trials except for those with a stopping iteration $n_{iterations}=1e5, 5e5, 1e6$ for which only a single trial was done.
 
+{: style="text-align:center"}
 ![pathcost convergence]({{ a11isonliu.github.io}}assets/images/posts/2020/simulated-annealing/conclusions4_pathcost_conv.png)
 
 This graph shows the convergence of the annealing algorithm over time for a single trial where the maximum number of iterations was $1e5$. The path cost converges rather quickly and possibly not this many iterations was required.

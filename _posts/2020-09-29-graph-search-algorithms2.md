@@ -14,7 +14,7 @@ Breadth-first search is only optimal when all path costs are equal. Uniform Cost
 
 I start by creating a class called <code>Frontier_PQ</code> to represent the frontier (a priority queue) for both Uniform Cost Search and A* Search. The priority queue is sorted in order of lowest cost to greatest cost and is implemented as a heap. There is some redundancy in the information stored in **states** and **q**. This redundancy could be eliminated to reduce storage requirements, however, it would increase the time complexity as the priority queue would need to be checked for states.
 
-```
+<pre><code class="language-python">
 # Takes instantiation arguments state, cost
 # start is the initial state(e.g. start='chi'), cost is the initial path cost
 class Frontier_PQ:
@@ -43,7 +43,7 @@ class Frontier_PQ:
         self.q[index]=(cost, state)
         self.q.sort()
         return
-```
+</code></pre>
 
 ## Uniform Cost Search
 My code for UCS is given below.
@@ -159,26 +159,23 @@ def astar_search(start, goal, state_graph, heuristic, return_cost=False, return_
     return 0
 </code></pre>
 
-Helper functions:
-<pre><code class="language-python">
-def heuristic_sld_providence(state):
-    return sld_providence[state]
-</code></pre>
 Additional helper functions used are included in the previous *Graph Search Algorithms* post. They are pretty straightforward.
 
 ## Usage
 Run all of the algorithms above on a weighted graph of US cities. <code>map_distances</code> is implemented as a dictionary of connected nodes.
+
+{: style="text-align:center"}
 ![us map distances]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/us_map_distances.png)
 
 #### Weighted Graph
 Find the optimal path from Chicago to Providence using the straight-line distance to Providence as a heuristic.
-```
+<pre><code class="language-python">
 astar_path = astar_search('chi', 'pro', map_distances, heuristic_sld_providence, True, True)
 ucs_path = uniform_cost('chi', 'pro', map_distances, True, True)
 
 print("A* Search Path =", astar_path[0], ", Distance (miles) =", astar_path[1], ", Nodes Expanded =", astar_path[2], "\n")
 print("Uniform Cost Search Path =", ucs_path[0], ", Distance (miles) =", ucs_path[1], ", Nodes Expanded =", ucs_path[2])
-```
+</code></pre>
 ```
 A* Search Path = ['chi', 'cle', 'buf', 'syr', 'bos', 'pro'] , Distance (miles) = 1046 , Nodes Expanded = 11 
 
@@ -189,11 +186,12 @@ Note that the optimal path found by both algorithms is the same, as it should be
 #### Another Weighted Graph
 I used A* to get from the point $(0,0)$ to $(14,20)$ on the graph below using straight-line distance to the goal as the heuristic. I wrote a function to create the dictionary that represented the graph and then found the optimal path using A*.
 
+{: style="text-align:center"}
 ![weighted graph 2]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms2/weighted_graph2.png)
-```
+<pre><code class="language-python">
 astar_solution = astar_search((0,0), (14,20), distances, heuristic_fcn, return_cost=True)
 print("A* Search Path =", astar_solution[0], " \nDistance (miles) =", astar_solution[1], "\n")
-```
+</code></pre>
 ```
 A* Search Path = [(0, 0), (0.2642182015052627, 20.033324445709404), (0.12547249447310752, 20.094573462136015), (-0.3326842354101051, 20.389978395358476), (0.5143024492904715, 21.50027514839235), (1.879542571484297, 22.29458591203462), (7.635895005315472, 24.701023330981783), (14, 20)]  
 Distance = 37.85905887568911
@@ -203,14 +201,15 @@ Distance = 37.85905887568911
 Here I use A* search with the maximum of the number of rows, the number of columns, and the Euclidean distance from the goal, as the heuristic to get to from an initial state at $(1,15)$ to the goal state at $(25,9)$. In this scenario, diagonal movements are also allowed. Instead of building up the entire state space graph in memory as done previously, ONLY a partial state graph is given for each node expansion, with only neighboring states included.
 
 The found solution is plotted below in black using a function I wrote. It has a path cost of 26.4853.
-```
+<pre><code class="language-python">
 astar_path = astar_search((1,15), (25,9), adjacent_states, heuristic_max, return_cost=True, return_nexp=False)
 print("optimal path =", astar_path[0], "\ncost =", astar_path[1])
-```
+</code></pre>
 ```
 optimal path = [(1, 15), (2, 15), (3, 15), (4, 15), (5, 15), (6, 15), (7, 15), (8, 15), (9, 15), (10, 15), (11, 15), (12, 15), (13, 15), (14, 15), (15, 14), (16, 13), (17, 13), (18, 12), (19, 12), (20, 11), (21, 10), (22, 10), (23, 10), (24, 9), (25, 9)] 
 cost = 26.485281374238575
 ```
+{: style="text-align:center"}
 ![engineering center path]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms2/engctr_maze.png)
 
 Notice there are many possible unique optimal paths (with the same cost) from the start to the goal other than the one found by my A* algorithm. Another optimal path from $(1,15)\rightarrow(14,15)\rightarrow(20,9)\rightarrow(25,9)$ is plotted above in gray.
