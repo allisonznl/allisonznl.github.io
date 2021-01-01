@@ -71,12 +71,12 @@
 }
 
 .site-description a:link
-.site-description a:visited,
-.site-description a:active{
+.site-description a:visited{
   color: $gray;
   text-decoration: none;
 }
 
+.site-description a:active,
 .site-description a:hover{
   color: $gray;
   text-decoration: underline;
