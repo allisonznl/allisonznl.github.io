@@ -11,19 +11,19 @@ featured_image:
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
 ## Question 2
-Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2 (1)$.
+Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2$.
 
 A raptor's motion can be modeled as
 
-$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}      (1)$$
+$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}  \text{     }  (1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $${|| \boldsymbol{x}||}_2= \sqrt{x^2+y^2}$$.
+where if $\boldsymbol{x}=(x,y)$ then we define $\boldsymbol{x}||_2= \sqrt{x^2+y^2}$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
 For simplicity, we assume the human runs in a constant direction and at a constant speed. Thus,
 
-$$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{|| \boldsymbol{c}||_2}+ \boldsymbol{h}(0)$$
+$$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{|| \boldsymbol{c}||_2}+ \boldsymbol{h}(0) \text{     } (2)$$
 
 where $\boldsymbol{c} \in \mathbb{R}^2$ is an initial direction and $\boldsymbol{h}(0)$ is the human's initial position.
 
