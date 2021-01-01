@@ -6,7 +6,7 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png)
+![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png){scale=80%}
 
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
@@ -17,7 +17,7 @@ A raptor's motion can be modeled as
 
 $$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}      (1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $$|| \boldsymbol{x}||_2= \sqrt{x^2+y^2}$$.
+where if $\boldsymbol{x}=(x,y)$ then we define $${|| \boldsymbol{x}||}_2= \sqrt{x^2+y^2}$$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
@@ -126,5 +126,7 @@ If the human starts in the center of the triangle and runs at a 56 degree angle 
 
 
 ```
-Additional interesting questions to consider: Optimize the angle for this problem. For which top speed of the wounded raptor does the optimal strategy become to run straight at the wounded raptor?
+Additional interesting questions to consider: 
+Optimize the angle for this problem. 
+For which top speed of the wounded raptor does the optimal strategy become to run straight at the wounded raptor?
 ```
