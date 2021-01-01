@@ -100,12 +100,13 @@ def depth_first(start, goal, state_graph, return_cost=False):
 
 ## Usage
 
+#### Weighted Graph
 BFS and DFS are demonstrated on a graph of US cities. Note that while the paths between nodes have costs, the path costs are not used by either algorithm when selecting nodes to visit, only for calculating the final found path cost. The graph is represented programmatically as a dictionary.
 
 ![us map distances]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/us_map_distances.png)
 ![us map times]({{ a11isonliu.github.io}}assets/images/posts/2020/search-algorithms/us_map_times.png)
 
-Using the algorithms to find the optimal path from Chicago to New York using two different weights for the graph, distances and times:
+Using the algorithms to find a path from Chicago to New York using two different weights for the graph, distances and times:
 
 Distances:
 ```
@@ -118,8 +119,12 @@ Times:
 Breadth First Path = ['chi', 'det', 'buf', 'syr', 'new'] , Time (mins) = 955
 Depth First Path = ['chi', 'ind', 'col', 'pit', 'bal', 'phi', 'new'] , Time (mins) = 1110
 ```
+#### Solving a maze
+I used BFS and DFS to find solutions to a maze. The maze is represented using a binary <code>numpy</code> array where 1s represent walls and 0s represent open space.
 
-Now we use BFS and DFS on maze to get from the start at (1,1) to the finish at (10,10). Note that since the path costs are all equal, BFS finds the optimal solution in this case.
+First, I converted the maze to a dictionary that listed possible actions from each valid position in the maze and then used BFS and DFS to solve. Then I wrote a function to plot the maze and the found path.
+
+Below, BFS and DFS are demonstrated on a maze where the goal is to get from the start at (1,1) to the finish at (10,10). Note that since the path costs are all equal, BFS finds the optimal solution in this case.
 
 ```
 breadth_first((1,1), (10,10), maze_graph, True)
