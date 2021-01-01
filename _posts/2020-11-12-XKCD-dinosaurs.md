@@ -6,7 +6,7 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png){scale=80%}
+![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png){width=70%, height=70%}
 
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
