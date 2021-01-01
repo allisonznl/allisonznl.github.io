@@ -6,18 +6,18 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-![Dinosaur Attack](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png))
+![Dinosaur XKCD]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png)
 
-The problem above appears in an XKCD comic at https://xkcd.com/135/.
+The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
 ## Question 2
 Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2 (1)$.
 
 A raptor's motion can be modeled as
 
-$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2} (2)$$
+$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}      (1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $|| \boldsymbol{x}||_2= \sqrt{x^2+y^2}$.
+where if $\boldsymbol{x}=(x,y)$ then we define $$|| \boldsymbol{x}||_2= \sqrt{x^2+y^2}$$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
@@ -37,7 +37,7 @@ We have $\boldsymbol{h}(0)=(0,0)$ since the human starts at the origin. $v_h=6$,
 
 To determine $\boldsymbol{c}$ we have $y=6\sin(56)\approx 4.974$ and $x=6 \cos(56) \approx 3.355$. 
 
-$$c= (3.355,4.974)$$
+$$c= (3.355,4.974)$$ so 
 $$||c||_2= \sqrt{3.355^2+4.974^2}=6$$
 
 Thus, $\boldsymbol{h}(t) = 6t\frac{(3.355,4.974)}{6} = (3.355t,4.974t)$.
@@ -118,7 +118,7 @@ Time caught by raptor 3, t = 0.6068034017008503
 SOLUTION:
 
 {: style="text-align:center"}
-![](({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/solution.png))
+![Dinosaur Attack Q2 Solution]({{ a11isonliu.github.io}}assets/images/posts/2020/XKCD-dinosaurs/solution.png)
 
 The human is caught by the injured raptor at <code>t = min(timeCaught) = 0.4772386193096548</code>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Curriculum Vitae
-featured_image: /assets/images/pages/style_guides.jpg
+title: Resume
+featured_image:
 ---
 
 ## Education
