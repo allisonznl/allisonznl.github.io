@@ -1,6 +1,6 @@
 # Site settings
 name: 'Allison Liu'
-description: 'allison.liu@colorado.edu'
+description: [allison.liu@colorado.edu](mailto:allison.liu@colorado.edu)
 meta_description: ''
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
