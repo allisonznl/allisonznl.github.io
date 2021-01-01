@@ -6,7 +6,7 @@ featured_image_thumbnail:
 featured_image:
 ---
 
-<img src="assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png" width="350px">
+<center><img src="assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png" width="400px"></center>
 
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
 
@@ -17,7 +17,7 @@ A raptor's motion can be modeled as
 
 $$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}  \text{     }  (Eq. 1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $'|'|\boldsymbol{x}'|'|_2= \sqrt{x^2+y^2}$.
+where if $\boldsymbol{x}=(x,y)$ then we define $\vert \vert \boldsymbol{x}\vert \vert_2= \sqrt{x^2+y^2}$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
