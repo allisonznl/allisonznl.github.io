@@ -6,6 +6,8 @@ featured_image_thumbnail:
 featured_image:
 ---
 
+In this post, I find the solution to a problem found in an XKCD comic involving raptors attacking a human. The goal is to find the optimal action for a human who is surrounded by three raptors positioned in an equilateral triangle.
+
 <center><img src="assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png" width="400px"></center>
 
 The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
