@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  A New Rock Climbing Area in Boulder, CO
-tags: [climbing]
+tags: [climbing, Boulder]
 featured_image_thumbnail:
 featured_image: 
 ---

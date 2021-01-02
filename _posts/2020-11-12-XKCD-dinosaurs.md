@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dinosaurs and XKCD"
-tags: [Numerical Analysis, dinosaurs]
+tags: [Numerical Analysis, dinosaurs, optimization]
 featured_image_thumbnail:
 featured_image:
 ---

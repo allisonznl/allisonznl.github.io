@@ -2,7 +2,7 @@
 name: 'Allison Liu'
 description: 'allison.liu@colorado.edu'
 meta_description: ''
-logo:
+logo:'assets/images/favicon-gray.png'
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
   image: 'bio-photo1.jpg'

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  A Summary of Arguments Against the Bayesian Approach to Probabilistic Inference
-tags: [ Bayesian, history, philosophy]
+tags: [ history/philosophy]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/scientific-revolution-paper/dice.png
 ---
