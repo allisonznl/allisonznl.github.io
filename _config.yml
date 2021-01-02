@@ -8,7 +8,7 @@ author:
   image: 'bio-photo1.jpg'
   greetings: "Hi! My name is Allison Liu. I'm a student studying Applied Math and Computer Science at the University of Colorado Boulder."
 favicon: 'assets/images/favicon.ico'
-baseurl: https://allisonznliu.com
+baseurl:
 production_url: https://allisonznliu.com/
 # disqus: 'justgoodthemes'
 # mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
