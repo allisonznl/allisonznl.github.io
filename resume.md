@@ -4,22 +4,8 @@ title: Resume
 featured_image:
 ---
 
-<p><a href="/assets/resume/Resume20210101.pdf" download target="_blank">Resume_AllisonLiu</a></p>
-<p><a href="/assets/resume/Fall2020.pdf" download target="_blank">Transcript_AllisonLiu</a></p>
-
-    
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
-        %}{%
-        endcapture %} {% assign sortedTags = site_tags | split:',' | sort %}
-        sortedTags = []
-    <section class="tagcloud inner">
-        <h2 class="tagcloud-title">Tags</h2>
-        <div class="tag-links">
-            {% for tag in sortedTags %}
-            <a href='{{ site.baseurl }}/tags/#{{ tag | cgi_escape }}'>{{ tag | camelcase }}</a>
-            {% endfor %}
-        </div><!-- .tag-links -->
-    </section><!-- .tagcloud -->
+<a href="/assets/documents/Resume20210101.pdf" download target="_blank">Open Resume</a>
+<a href="/assets/documents/Fall2020.pdf" download target="_blank">Open Transcript (as of Fall 2020)</a>
 
 ## Education
 #### University of Colorado, Boulder, CO
