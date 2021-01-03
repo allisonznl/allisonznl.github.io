@@ -3,11 +3,12 @@ layout: page
 title: Resume
 featured_image:
 ---
-<p class="download-box">
-	<a href="/assets/documents/Resume20210101.pdf" target="_blank">Open Resume</a>
-	<a href="/assets/documents/Fall2020.pdf" target="_blank">Open Transcript (as of Fall 2020)</a>
-</p>
-
+<section class="download-box inner">
+	<div class="download-box-links">
+	    <a href="/assets/documents/Resume20210101.pdf" target="_blank">Open Resume</a>
+	    <a href="/assets/documents/Fall2020.pdf" target="_blank">Open Transcript (as of Fall 2020)</a>
+	</div>
+</section>
 
 ## Education
 #### University of Colorado, Boulder, CO
