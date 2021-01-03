@@ -13,7 +13,7 @@ featured_image:
 ## Education
 #### University of Colorado, Boulder, CO
 **Applied Math B.S., Computer Science Minor, Expected Graduation May 2022**
-* **GPA: 3.703/4.000**
+* **GPA: 3.706/4.000**
 * Relevant Coursework: Computer Science- Data Structures, Algorithms, Artificial Intelligence. Math- Multivariable Calculus, Linear Algebra, Probability, Numerical Analysis, Fourier Analysis.
 * Awards and Honors: Engineering Honors Program, BOLD Scholar, College of Engineering Dean’s List
 * Clubs and Organizations: CU Women’s Ultimate Frisbee, Society of Women Engineers (SWE)
