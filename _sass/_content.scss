@@ -368,3 +368,18 @@
 .older-posts {
   right: 0;
 }
+
+.download-box a{
+  border: 1px solid $gray-lighter;
+  display: inline-block;
+  font-size: 0.77778rem;
+  line-height: 1.5;
+  margin: 0 0.25em 0.5em 0;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+}
+
+.download-box a:hover {
+  background: $color-accent;
+  color: #fff;
+}
