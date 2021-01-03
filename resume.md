@@ -6,8 +6,8 @@ featured_image:
  <!-- Create a sorted array of tags -->
     <section class="tagcloud inner">
         <div class="tag-links">
-            <a href="/assets/resume/Resume20210101.pdf" download="Resume_AllisonLiu"> </a>
-            <a href="/assets/resume/Fall2020.pdf" download="Transcript_AllisonLiu"> </a>
+            <a href="/assets/resume/Resume20210101.pdf" download="Resume_AllisonLiu">
+            <a href="/assets/resume/Fall2020.pdf" download="Transcript_AllisonLiu">
         </div><!-- .tag-links -->
     </section><!-- .tagcloud -->
 
