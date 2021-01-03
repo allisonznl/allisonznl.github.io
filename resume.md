@@ -4,8 +4,8 @@ title: Resume
 featured_image:
 ---
 <p class="download-box">
-	<a href="/assets/documents/Resume20210101.pdf">Open Resume</a>
-	<a href="/assets/documents/Fall2020.pdf">Open Transcript (as of Fall 2020)</a>
+	<a href="/assets/documents/Resume20210101.pdf" target="_blank">Open Resume</a>
+	<a href="/assets/documents/Fall2020.pdf" target="_blank">Open Transcript (as of Fall 2020)</a>
 </p>
 
 

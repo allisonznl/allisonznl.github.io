@@ -113,6 +113,7 @@
 .comments-area,
 .read-next,
 .tagcloud,
+.download-box,
 .newsletter-box {
   margin-bottom: 3.33333em;
   margin-top: 3.33333em;
@@ -166,7 +167,8 @@
   margin-bottom: 0.5em;
 }
 
-.tagcloud a {
+.tagcloud a,
+.download-box a {
   border: 1px solid $gray-lighter;
   display: inline-block;
   font-size: 0.77778rem;
@@ -176,7 +178,8 @@
   text-decoration: none;
 }
 
-.tagcloud a:hover {
+.tagcloud a:hover,
+.download-box a:hover {
   background: $color-accent;
   color: #fff;
 }
@@ -367,19 +370,4 @@
 
 .older-posts {
   right: 0;
-}
-
-.download-box a{
-  border: 1px solid $gray-lighter;
-  display: inline-block;
-  font-size: 0.77778rem;
-  line-height: 1.5;
-  margin: 0 0.25em 0.5em 0;
-  padding: 0.5em 0.75em;
-  text-decoration: none;
-}
-
-.download-box a:hover {
-  background: $color-accent;
-  color: #fff;
 }
