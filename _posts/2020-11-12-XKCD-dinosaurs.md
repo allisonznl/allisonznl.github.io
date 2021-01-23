@@ -17,15 +17,15 @@ Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's po
 
 A raptor's motion can be modeled as
 
-$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{||\boldsymbol{h}(t)-\boldsymbol{r}(t)||_2}  \text{     }  (Eq. 1)$$
+$$\frac{d \boldsymbol{r}}{dt} = v_r \frac{\boldsymbol{h}(t)-\boldsymbol{r}(t)}{|\boldsymbol{h}(t)-\boldsymbol{r}(t)|}  \text{     }  (Eq. 1)$$
 
-where if $\boldsymbol{x}=(x,y)$ then we define $\vert \vert \boldsymbol{x}\vert \vert_2= \sqrt{x^2+y^2}$.
+where if $\boldsymbol{x}=(x,y)$ then we define $\vert \boldsymbol{x}\vert = \sqrt{x^2+y^2}$.
 
 The three raptor's each satisfy this ODE separately, but the $x$ and $y$ components of a raptor's motion are coupled, so we have 2-dimensional ODEs.
 
 For simplicity, we assume the human runs in a constant direction and at a constant speed. Thus,
 
-$$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{|| \boldsymbol{c}||_2}+ \boldsymbol{h}(0) \text{     } (Eq. 2)$$
+$$\boldsymbol{h}(t) = v_ht\frac{\boldsymbol{c}}{| \boldsymbol{c}|}+ \boldsymbol{h}(0) \text{     } (Eq. 2)$$
 
 where $\boldsymbol{c} \in \mathbb{R}^2$ is an initial direction and $\boldsymbol{h}(0)$ is the human's initial position.
 
@@ -40,12 +40,12 @@ We have $\boldsymbol{h}(0)=(0,0)$ since the human starts at the origin. $v_h=6$,
 To determine $\boldsymbol{c}$ we have $y=6\sin(56)\approx 4.974$ and $x=6 \cos(56) \approx 3.355$. 
 
 $$c= (3.355,4.974)$$ so 
-$$||c||_2= \sqrt{3.355^2+4.974^2}=6$$
+$$|c|= \sqrt{3.355^2+4.974^2}=6$$
 
 Thus, $\boldsymbol{h}(t) = 6t\frac{(3.355,4.974)}{6} = (3.355t,4.974t)$.
 
 So Equation (1) becomes
-$$\frac{d \boldsymbol{r}}{dt} = F(t, \boldsymbol{r}) = v_r \frac{(3.355t,4.974t)- \boldsymbol{r}(t)}{||(3.355t,4.974t)- \boldsymbol{r}(t)||_2}$$
+$$\frac{d \boldsymbol{r}}{dt} = F(t, \boldsymbol{r}) = v_r \frac{(3.355t,4.974t)- \boldsymbol{r}(t)}{|(3.355t,4.974t)- \boldsymbol{r}(t)|}$$
 
 <pre><code class="language-Python">
 import numpy as np
