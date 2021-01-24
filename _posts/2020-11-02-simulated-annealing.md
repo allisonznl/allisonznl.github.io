@@ -2,7 +2,7 @@
 layout: post
 title: 'Graph Search Algorithms 3: Simulated Annealing'
 tags: [algorithms, graphs, AI, optimization]
-featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/thumbnail.png
+featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/cover.png
 featured_image: assets/images/posts/2020/simulated-annealing/final_path.png
 featured: true
 hidden: true
