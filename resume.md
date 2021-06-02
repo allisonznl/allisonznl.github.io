@@ -5,8 +5,8 @@ featured_image:
 ---
 <section class="download-box inner">
 	<div class="download-box-links">
-	    <a href="/assets/documents/Resume20210101.pdf" target="_blank">Open Resume</a>
-	    <a href="/assets/documents/Fall2020.pdf" target="_blank">Open Transcript (as of Fall 2020)</a>
+	    <a href="/assets/documents/Resume20210602.pdf" target="_blank">Open Resume</a>
+	    <a href="/assets/documents/Spring2021.pdf" target="_blank">Open Transcript (as of Spring 2021)</a>
 	</div>
 </section>
 
