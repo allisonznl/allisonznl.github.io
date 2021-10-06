@@ -5,7 +5,7 @@ featured_image:
 ---
 <section class="download-box inner">
 	<div class="download-box-links">
-	    <a href="/assets/documents/Resume20210602.pdf" target="_blank">Open Resume</a>
+	    <a href="/assets/documents/Resume20210915.pdf" target="_blank">Open Resume</a>
 	    <a href="/assets/documents/Spring2021.pdf" target="_blank">Open Transcript (as of Spring 2021)</a>
 	</div>
 </section>
@@ -13,14 +13,19 @@ featured_image:
 ## Education
 #### University of Colorado, Boulder, CO
 **Applied Math B.S., Computer Science Minor, Expected Graduation May 2022**
-* **GPA: 3.706/4.000**
+* **GPA: 3.743/4.000**
 * Relevant Coursework: 
-	* Computer Science- Data Structures, Algorithms, Artificial Intelligence. 
-	* Math- Multivariable Calculus, Linear Algebra, Probability, Numerical Analysis, Fourier Analysis.
+	* Computer Science- Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Software Development, Database Systsms. 
+	* Math- Multivariable Calculus, Fourier Analysis, Probability, Linear Algebra, Numerical Analysis, Statistics.
 * Awards and Honors: Engineering Honors Program, BOLD Scholar, College of Engineering Dean’s List
 * Clubs and Organizations: CU Women’s Ultimate Frisbee, Society of Women Engineers (SWE)
 
 ## Work
+#### Laboratory for Atmospheric and Space Physics (LASP) - University of Colorado Boulder
+**Student Research Assistant, February 2021 - Present**
+* Build, train, and optimize a generative adversarial network to create a machine-learning ready dataset for solar flare prediction. Using historic and current magnetogram data—Data pre-processing and exploration, feature engineering, and statistical analysis of results.
+
+
 #### Kapteyn-Murnane Group, JILA-University of Colorado Boulder
 **Student Researcher, June 2017-August 2020**
 * Designed and built a commercial-quality M2 laser diagnostic device using MATLAB. I interfaced multiple pieces of scientific equipment and created a graphical user interface to collect and analyze data. The program comprehensively characterized a laser beam by implementing a modified phase-retrieval algorithm.
@@ -35,15 +40,15 @@ featured_image:
 **Team Leader, August-December 2018**
 * Led a team to build and design an experiment for a high-altitude weather balloon. I contributed to the programming, electronics, structural design, testing, and presentation of the engineering project. The experiment consisted of a muon detector and various other sensors connected to an Arduino.
 
-
 ## Volunteer Experience
-#### Partnerships for Informal Education in the Community (PISEC), February 2020 - Present
-* Volunteer weekly as a mentor for a program that encourages interest in STEM for students of underrepresented minorities
+#### Partnerships for Informal Education in the Community (PISEC), February 2020 – May 2020
+* Volunteered weekly as a mentor for STEM students of underrepresented minorities outside of Boulder
+#### Machine Learning STEM Camp, May 2021 – July 2021
+* Developed and taught machine learning curriculum to high school students for a STEM summer camp
 
 
 ## Skills and Interests
-* MATLAB, C++, Python, Mathematica
-* Machining, soldering
-* Speak Mandarin Chinese
-* CPR and First-Aid Certification
-* Climbing Gym Routesetter at University of Colorado Boulder
+*Technical Languages: Python, MATLAB, C++, SQL, HTML, CSS, Mathematica
+*Tools and Technologies: Unix/Linux, Git, Latex, Bash Shell
+*CPR and First-Aid Certification
+*Climbing gym routesetter at University of Colorado Boulder (September 2020-Present)
