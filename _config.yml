@@ -38,6 +38,8 @@ navigation:
   #   url: /contact
   - text: Search
     url: /search
+  - text: AGU2021
+    url: /LiuA_AGU2021
 
 # Required Plugins
 plugins_dir:
