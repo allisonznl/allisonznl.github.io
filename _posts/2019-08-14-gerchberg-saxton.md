@@ -49,7 +49,7 @@ Our algorithm uses an over-sampled intensity measurement. We take 9-30 images wi
 An example retrieval looks like this, with an intensity profile plotted on the left, the retrieved phase overlaid on top of the intensity in the center, and the error on the right.
 
 {: style="text-align:center"}
-![retrieval experimenta]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/retrieval_exp.jpg)
+![retrieval experimental]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/retrieval_exp.jpg)
 
 #### Handling Wavelength
 In original GS and our main algorithm, the retrieval algorithm must know the wavelength of the laser. For a single wavelength, we found the algorithm can reliably determine the wavelength to within about 5 nm.

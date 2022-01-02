@@ -13,5 +13,3 @@ Outside of programming, Allison is passionate about machine learning ethics and 
 She is a routesetter at the CU Boulder Climbing Gym and loves rock climbing, hiking, and traveling.
 
 *Thank you for reading!*
-
->That's what I think a meaningful life is - Living not for oneself, but for ones community. <cite>Ruth Bader Ginsburg</cite>

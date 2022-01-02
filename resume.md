@@ -5,18 +5,18 @@ featured_image:
 ---
 <section class="download-box inner">
 	<div class="download-box-links">
-	    <a href="/assets/documents/Resume20210915.pdf" target="_blank">Open Resume</a>
-	    <a href="/assets/documents/Spring2021.pdf" target="_blank">Open Transcript (as of Spring 2021)</a>
+	    <a href="/assets/documents/Resume20220101.pdf" target="_blank">Resume PDF</a>
+	    <a href="/assets/documents/Fall2021.pdf" target="_blank">Transcript (as of Fall 2021)</a>
 	</div>
 </section>
 
 ## Education
 #### University of Colorado, Boulder, CO
 **Applied Math B.S., Computer Science Minor, Expected Graduation May 2022**
-* **GPA: 3.743/4.000**
+* **GPA: 3.707/4.000**
 * Relevant Coursework: 
-	* Computer Science- Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Software Development, Database Systsms. 
-	* Math- Multivariable Calculus, Fourier Analysis, Probability, Linear Algebra, Numerical Analysis, Statistics.
+	* Computer Science- Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Software Development, Database Systems. 
+	* Math- Multivariable Calculus, Fourier Analysis, Probability, Linear Algebra, Numerical Analysis, Chaos in Dynamical Systems, Real Analysis, Mathematical Statistics.
 * Awards and Honors: Engineering Honors Program, BOLD Scholar, College of Engineering Dean’s List
 * Clubs and Organizations: CU Women’s Ultimate Frisbee, Society of Women Engineers (SWE)
 
@@ -51,4 +51,4 @@ featured_image:
 * Technical Languages: Python, MATLAB, C++, SQL, HTML, CSS, Mathematica
 * Tools and Technologies: Unix/Linux, Git, Latex, Bash Shell
 * CPR and First-Aid Certification
-* Climbing gym routesetter at University of Colorado Boulder (September 2020-Present)
+* Climbing gym Routesetter at University of Colorado Boulder (September 2020-Present)
