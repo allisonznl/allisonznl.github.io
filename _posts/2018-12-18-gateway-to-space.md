@@ -19,18 +19,18 @@ Links to our final project report and final poster which we presented at the CU 
 
 From this project I had an incredible experience learning to work with and communicate with a team of my peers successfully and executing an engineering project from design to testing to completion. I got to witness launch, and even be in the lead tracking car chasing the balloon from Eaton, CO to its landing location in somebody's backyard on the plains of Northern Colorado. As part of this class, we also went to Fairview High School (my old school) and did some outreach describing our experiences in Engineering at CU.
 
-{: style="text-align:center; justify-content: center; height: 50%; width: 50%"}
-![launch 2]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/gateway2space.jpeg)
+<p align="center">
+  <img src = "a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/gateway2space.jpeg" />
+</p>
 
 **Our completed payload:**
 
-{: style="text-align:center; justify-content: center; width:50%; height=50%"}
-![completed payload]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg)
+<p align="center">
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg" width="45%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_9277.jpeg" width="45%" />
+</p>
 
 **Launch:**
-
-{: style="text-align:center; justify-content: center; height: 50%; width: 50%"}
-![launch 1]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9277.jpeg)
 
 ![launch 3]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9300.mov)
 
@@ -38,8 +38,8 @@ From this project I had an incredible experience learning to work with and commu
 
 Ascent:
 <p align="center">
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0041976.jpeg" width="45%" />
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042364.jpeg" width="45%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0041976.jpeg" width="48%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042364.jpeg" width="48%" />
 </p>
 
 ![ascent 3]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/Ascent2p3.png)
@@ -53,8 +53,9 @@ Burst (taken by another group):
 
 Descent:
 
-{: style="text-align:center; height: 50%; width: 50%"}
-![descent 1]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/G0042576.jpeg) 
+<p align = "center">
+  <img src ="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042576.jpeg" width="60%" />
+</p>
 
 <p align="center">
   <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042613.jpeg" width="45%" />
@@ -78,8 +79,9 @@ Our payload went through extensive testing to ensure it could withstand flight a
 
 Women in engineering :)
 
-{: style="text-align:center; height: 50%; width: 50%"}
-![team wall-e women]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9355 3.jpeg)
+<p align = "center">
+  <img src ="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_9355 3.jpeg" width="60%" />
+</p>
 
 This project was done as a part of ASEN 1400 in Fall 2018. Thanks to my group members Sydney Evans, Nicolena Weber, Tracey Sneed, Joel Bridgeman, Jake Pirnack, Holland Morris, and Prof. Chris Koehler.
 
