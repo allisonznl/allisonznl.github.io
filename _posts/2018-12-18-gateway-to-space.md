@@ -24,10 +24,8 @@ From this project I had an incredible experience learning to work with and commu
 
 **Our completed payload:**
 
-<p align="center">
-{: style="text-align:center; height: 50%; width: 50%"}
-![completed payload]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg)
-</p>
+{: style="text-align:center"}
+![completed payload]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg){width=50% height=50%}
 
 **Launch:**
 
@@ -84,7 +82,4 @@ Women in engineering :)
 
 This project was done as a part of ASEN 1400 in Fall 2018. Thanks to my group members Sydney Evans, Nicolena Weber, Tracey Sneed, Joel Bridgeman, Jake Pirnack, Holland Morris, and Prof. Chris Koehler.
 
-<p align="center>
-{: style="text-align:center; height: 50%; width: 50%"}
 ![team wall-e]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9334.jpeg)
-</p>
