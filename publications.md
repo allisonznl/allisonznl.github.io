@@ -19,7 +19,7 @@ featured_image:
 
 <section class="download-box inner">
 	<div class="download-box-links">
-	    <a href="https://www.science.org/doi/10.1126/science.aaw9486" target="_blank">Link</a>
+	    <a href="https://doi.org/10.1126/science.aaw9486" target="_blank">Link</a>
 	    <a href="/assets/documents/publications/eaaw9486.full.pdf" target="_blank">Paper</a>
 	</div>
 </section>

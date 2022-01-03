@@ -8,12 +8,20 @@ featured: true
 hidden: true
 ---
 
-This summer, I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). Ultimately, my modified version of the algorithm was able to gather more information and achieve a higher resolution than traditional characterization methods using the same data set. The algorithm was used by members of my lab group to analyze their laser beams and resulted in a [publication](https://doi.org/10.1126/science.aaw9486) in Science Magazine. I worked with a graduate student mentor, David Couch, who mentored me for 3 years. Programs written for this project are either entirely my own or I was a significant contributor to.
+This summer, I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). Ultimately, my modified version of the algorithm was able to gather more information and achieve a higher resolution than traditional characterization methods using the same data set. The algorithm was used by members of my lab group to analyze their laser beams and resulted in a publication in Science Magazine. I worked with a graduate student mentor, David Couch, who mentored me for 3 years. Programs written for this project are either entirely my own or I was a significant contributor to.
 
 {: style="text-align:center"}
 ![science cover]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/science_cover.jpg)
 
 This project spun off of a project to create an M^2 beam characterization device and preliminary work was completed at the very end of last summer.
+
+<section class="download-box inner">
+	<div class="download-box-links">
+	    <a href="/assets/documents/ALiu_GSpresentation.pdf" target="_blank">Presentation</a>
+	    <a href="https://doi.org/10.1126/science.aaw9486" target="_blank">Paper</a>
+	    <a href="/assets/documents/M^2 Talk.pdf" target="_blank">M^2 Presentation</a>
+	</div>
+</section>
 
 ##  Importance
 
