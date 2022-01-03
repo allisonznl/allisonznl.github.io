@@ -7,7 +7,9 @@ featured_image: assets/images/posts/2018/gateway-to-space/Descent2p2.png
 hidden: false
 ---
 
-In Fall 2018, I helped to lead a team of 6 other students to design and build a payload for a high-altitude weather balloon to learn something about the Earth. The large (8m diameter!) balloon was filled with hydrogen and was to go to the edge of the atmosphere (~30km or 100,000 ft above sea level). 
+In Fall 2018, I helped to lead a team of 6 other students to design and build a payload for a high-altitude weather balloon to learn something about the Earth. The large (8m diameter!) balloon was filled with hydrogen and was to go to the edge of the atmosphere (~30km or 100,000 ft above sea level). In addition to studying the flux of cosmic rays throughout the atmosphere using a handheld cosmic ray detector [CosmicWatch](http://www.cosmicwatch.lns.mit.edu/), the final payload also contained a GoPro and detected temperature, pressure, and humidity as the balloon floated to the edge of the atmosphere. We were able to measure the increase of muons, which are byproducts of cosmic rays, over time as the balloon rose and determined peak muon detection to be at approximately 18km above sea level. 
+
+Links to our final project report and final poster which we presented at the CU Boulder Design Expo in Fall 2018 and won the Aerospace Best Project Award.
 
 <section class="download-box inner">
 	<div class="download-box-links">
@@ -16,18 +18,15 @@ In Fall 2018, I helped to lead a team of 6 other students to design and build a 
 	</div>
 </section>
 
+From this project I had an incredible experience learning to work with and communicate with a team of my peers successfully and executing an engineering project from design to testing to completion. I got to witness launch, and even be in the lead tracking car chasing the balloon from Eaton, CO to its landing location in somebody's backyard on the plains of Northern Colorado. As part of this class, we also went to Fairview High School (my old school) and did some outreach describing our experiences in Engineering at CU.
+
 {: style="text-align:center; height: 50%; width: 50%"}
 ![launch 2]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9290.jpeg)
 
 <p align="center">
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_4797.jpeg" width="50%" />
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_4804.jpeg" width="50%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_4797.jpeg" width="40%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_4804.jpeg" width="40%" />
 </p>
-
-In addition to studying the flux of cosmic rays throughout the atmosphere using a handheld cosmic ray detector [CosmicWatch](http://www.cosmicwatch.lns.mit.edu/), the final payload also contained a GoPro and detected temperature, pressure, and humidity as the balloon floated to the edge of the atmosphere. We were able to measure the increase of muons, which are byproducts of cosmic rays, over time as the balloon rose and determined peak muon detection to be at approximately 18km above sea level. From this project I had an incredible experience learning to work with and communicate with a team of my peers successfully and executing an engineering project from design to testing to completion. I got to witness launch, and even be in the lead tracking car chasing the balloon from Eaton, CO to its landing location in somebody's backyard on the plains of Northern Colorado. As part of this class, we also went to Fairview High School (my old school) and did some outreach describing our experiences in Engineering at CU.
-
-Links to our final project report and final poster which we presented at the CU Boulder Design Expo in Fall 2018 and won the Aerospace Best Project Award.
-
 
 
 **Our completed payload:**
@@ -79,6 +78,7 @@ Our payload went through extensive testing to ensure it could withstand flight a
 ![stair test]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9131.mov)
 
 Women in engineering :)
+
 {: style="text-align:center; height: 50%; width: 50%"}
 ![team wall-e women]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9355 3.jpeg)
 
