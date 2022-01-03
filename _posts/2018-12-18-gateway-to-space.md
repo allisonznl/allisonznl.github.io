@@ -19,17 +19,17 @@ Links to our final project report and final poster which we presented at the CU 
 
 From this project I had an incredible experience learning to work with and communicate with a team of my peers successfully and executing an engineering project from design to testing to completion. I got to witness launch, and even be in the lead tracking car chasing the balloon from Eaton, CO to its landing location in somebody's backyard on the plains of Northern Colorado. As part of this class, we also went to Fairview High School (my old school) and did some outreach describing our experiences in Engineering at CU.
 
-{: style="text-align:center; height: 50%; width: 50%"}
+{: style="text-align:center; justify-content: center; height: 50%; width: 50%"}
 ![launch 2]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/gateway2space.jpeg)
 
 **Our completed payload:**
 
-{: style="text-align:center"}
-![completed payload]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg){width=50% height=50%}
+{: style="text-align:center; justify-content: center; width:50%; height=50%"}
+![completed payload]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9264.jpeg)
 
 **Launch:**
 
-{: style="text-align:center; height: 50%; width: 50%"}
+{: style="text-align:center; justify-content: center; height: 50%; width: 50%"}
 ![launch 1]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9277.jpeg)
 
 ![launch 3]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9300.mov)
@@ -39,7 +39,7 @@ From this project I had an incredible experience learning to work with and commu
 Ascent:
 <p align="center">
   <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0041976.jpeg" width="45%" />
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042364.png" width="45%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/G0042364.jpeg" width="45%" />
 </p>
 
 ![ascent 3]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/Ascent2p3.png)
@@ -47,11 +47,12 @@ Ascent:
 
 Burst (taken by another group):
 <p align="center">
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1.png" width="45%" />
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1p2.png" width="45%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1.png" width="42%" />
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1p2.png" width="42%" />
 </p>
 
 Descent:
+
 {: style="text-align:center; height: 50%; width: 50%"}
 ![descent 1]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/G0042576.jpeg) 
 
