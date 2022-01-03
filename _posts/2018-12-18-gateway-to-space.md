@@ -32,8 +32,6 @@ From this project I had an incredible experience learning to work with and commu
 
 ## Launch Video:
 
-![launch]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9300.mov)
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FiJ0n1SLtB4" title="ASEN 1400 Launch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Flight:
@@ -49,8 +47,8 @@ From this project I had an incredible experience learning to work with and commu
 
 ### Burst (taken by another group):
 <p align="center">
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1.png" width="42%" alt="Burst 1"/>
-  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst2.png" width="42%" alt="Burst 2"/>
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst1.png" width="48%" alt="Burst 1"/>
+  <img src="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/Burst2.png" width="48%" alt="Burst 2"/>
 </p>
 
 ### Descent:
@@ -77,14 +75,12 @@ Soon after launch, we immediately got into cars to follow the balloon across the
 
 Our payload went through extensive testing to ensure it could withstand flight and near-space environments. Tests included structural (drop, whip, stair) tests, sensor tests, cold tests, and camera tests.
 
-<p align = "center">
-<figure>
-  <img src ="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_9355 3.jpeg" width="40%" alt="team wall-e women"/>
-  <figcaption> Women in Engineering :) </figcaption>
-</figure>
-</p>
-
 ## Acknowledgements
 This project was done as a part of ASEN 1400 in Fall 2018. Thanks to my group members Sydney Evans, Nicolena Weber, Tracey Sneed, Joel Bridgeman, Jake Pirnack, Holland Morris, and Prof. Chris Koehler.
 
 ![team wall-e]({{ a11isonliu.github.io}}assets/images/posts/2018/gateway-to-space/IMG_9334.jpeg)
+
+<p align="center">
+    <img src ="a11isonliu.github.io/assets/images/posts/2018/gateway-to-space/IMG_9355 3.jpeg" width="40%" alt="team wall-e women"/>
+    Women in Engineering :)
+</p>

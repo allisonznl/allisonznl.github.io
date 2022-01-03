@@ -32,6 +32,8 @@ navigation:
     url: /about
   - text: Resume
     url: /resume
+  - text: Publications
+    url: /publications
   # - text: Style Guide
   #   url: /style-guide
   # - text: Contact Me
