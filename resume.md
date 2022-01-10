@@ -48,7 +48,7 @@ featured_image:
 
 
 ## Skills and Interests
-* Technical Languages: Python, MATLAB, C++, SQL, HTML, CSS, Mathematica
-* Tools and Technologies: Unix/Linux, Git, Latex, Bash Shell
+* Technical Languages: Python, MATLAB, C++, SQL, HTML, CSS
+* Tools and Technologies: Unix/Linux, Git, Latex, Bash Shell, Mathematica
 * CPR and First-Aid Certification
 * Climbing gym Routesetter at University of Colorado Boulder (September 2020-Present)
