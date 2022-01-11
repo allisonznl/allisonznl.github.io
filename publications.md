@@ -31,7 +31,7 @@ featured_image:
 <section class="download-box inner">
 	<div class="download-box-links">
 	    <a href="https://doi.org/10.1002/essoar.10510080.1" target="_blank">Link</a>
-	    <a href="<a href="/assets/documents/POSTER_AGU2021_LiuA.pdf" target="_blank">Poster</a>" target="_blank">Poster</a>
+	    <a href="/assets/documents/POSTER_AGU2021_LiuA.pdf" target="_blank">Poster</a>
 	</div>
 </section>
 
@@ -40,4 +40,5 @@ featured_image:
 <section class="download-box inner">
 	<div class="download-box-links">
 	    <a href="https://doi.org/10.1002/essoar.10510078.1" target="_blank">Link</a>
+	</div>
 </section>
