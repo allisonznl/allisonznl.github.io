@@ -35,7 +35,7 @@ featured_image:
 	</div>
 </section>
 
-* W. Carande and **A. Liu.** *SWx TREC Deep Learning Laboratory: Advances in Machine Learning for Space Weather.* Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510078.1. Presented at AGU Conference 2021.
+* W. Carande, **A. Liu**, C. Feldhaus, J. Craft, and C. Pankratz. *SWx TREC Deep Learning Laboratory: Advances in Machine Learning for Space Weather.* Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510078.1. Presented at AGU Conference 2021.
 
 <section class="download-box inner">
 	<div class="download-box-links">
