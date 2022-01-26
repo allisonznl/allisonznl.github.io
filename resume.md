@@ -22,11 +22,11 @@ featured_image:
 
 ## Work
 #### Laboratory for Atmospheric and Space Physics (LASP) - University of Colorado Boulder
-**Student Research Assistant, February 2021 - Present**
+**Undergraduate Research Assistant, February 2021 - Present**
 * Build, train, and optimize a generative adversarial network to create a machine-learning ready dataset for solar flare prediction. Using historic and current magnetogram data—Data pre-processing and exploration, feature engineering, and statistical analysis of results.
 
 #### Kapteyn-Murnane Group, JILA-University of Colorado Boulder
-**Student Researcher, June 2017-August 2020**
+**Undergraduate Research Assistant, June 2017-August 2020**
 * Designed and built a commercial-quality M2 laser diagnostic device using MATLAB. I interfaced multiple pieces of scientific equipment and created a graphical user interface to collect and analyze data. The program comprehensively characterized a laser beam by implementing a modified phase-retrieval algorithm.
 * Interfaced a novel laser system with an existing chemical engineering experiment.
 
