@@ -1,19 +1,17 @@
 ---
 layout: post
 title: 'Modifying the Gerchberg-Saxton Phase-Retrieval Algorithm'
-tags: [Gerchberg-Saxton, algorithms, phase retrieval, beam characterization, M2]
+tag: Algorithms
 featured_image_thumbnail: assets/images/posts/2019/GS/science_cover_cropped.gif
 featured_image: assets/images/posts/2019/GS/science_header.jpg
 featured: true
 hidden: true
+excerpt_separator: <!--more-->
 ---
 
-This summer, I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). Ultimately, my modified version of the algorithm was able to gather more information and achieve a higher resolution than traditional characterization methods using the same data set. The algorithm was used by members of my lab group to analyze their laser beams and resulted in a publication in Science Magazine. I worked with a graduate student mentor, David Couch, who mentored me for 3 years. Programs written for this project are either entirely my own or I was a significant contributor to.
 
-{: style="text-align:center"}
-![science cover]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/science_cover.jpg)
 
-This project spun off of a project to create an M^2 beam characterization device and preliminary work was completed at the very end of last summer.
+I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). My modified algorithm could gather more information and achieve a higher resolution than traditional beam-characterization methods using the same data. <!--more-->
 
 <section class="download-box inner">
 	<div class="download-box-links">
@@ -22,6 +20,11 @@ This project spun off of a project to create an M^2 beam characterization device
 	    <a href="/assets/documents/M^2 Talk.pdf" target="_blank">M^2 Presentation</a>
 	</div>
 </section>
+
+The algorithm was used by members of my lab group to analyze their laser beams and resulted in a publication in Science Magazine. I worked with a graduate student mentor, David Couch, who mentored me for 3 years. This project spun off of a project to create an M^2 beam characterization device and preliminary work was completed at the very end of summer 2019.
+
+{: style="text-align:center"}
+![science cover]({{ a11isonliu.github.io}}assets/images/posts/2019/GS/science_cover.jpg)
 
 ##  Importance
 
@@ -73,8 +76,8 @@ For multiple wavelengths, the algorithm does not perform very well.
 Below are example retrievals for when the algorithm is given the incorrect starting wavelength. It clearly converges on incorrect results, but when plotted they turned out to be very beautiful!
 
 <p align="center">
-  <img src="a11isonliu.github.io/assets/images/posts/2019/GS/pretty2.jpg" width="100" />
-  <img src="a11isonliu.github.io/assets/images/posts/2019/GS/pretty1.jpg" width="100" />
+  <img src="/assets/images/posts/2019/GS/pretty2.jpg" width="200" />
+  <img src="/assets/images/posts/2019/GS/pretty1.jpg" width="197" />
 </p>
 
 #### Sampling on one side of the focus

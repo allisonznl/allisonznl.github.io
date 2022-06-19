@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Disease Modeling using Markov Chains"
-tags: [ Differential Equations, Markov Chains]
+tag:  
 featured_image_thumbnail:
 featured_image: assets/images/posts/2019/DiseaseModeling/SEIR_MarkovChain.png
 hidden: true

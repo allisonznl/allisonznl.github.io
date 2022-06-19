@@ -1,0 +1,26 @@
+---
+layout: page
+title: Projects
+---
+
+<ul>
+  {% for tag in site.tags %}
+    <h1>{{ tag.category }}</h1>
+    <p>{{ tag.content | markdownify }}</p>
+    {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
+    {% for post in filtered_posts %}
+    <li>
+      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <!-- <h6>{{ post.date | date: "%Y-%m-%d" }}</h6> -->
+
+      <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+       <b>{{ post.date | date: "%B %-d, %Y" }}</b> 
+    </time>
+      {{ post.excerpt }}
+    </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+
+

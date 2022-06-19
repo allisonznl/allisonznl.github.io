@@ -1,14 +1,17 @@
 ---
 layout: post
 title: 'Graph Search Algorithms: BFS and DFS'
-tags: [algorithms, graphs, AI, optimization]
+tag: Algorithms
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
 featured: false
 hidden: false
 ---
 
-This is the first set of a series of graph search algorithms that I will examine. While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. I begin here by describing and programming two uninformed search methods: breadth first search and depth first search. Both graph searches are complete, but not necessarily optimal. The algorithms are demonstrated by finding solutions to a graph of connected cities as well as a maze.
+This is the first set of a series of graph search algorithms that I will examine. I describe breadth first search and depth first search and implement them to find paths between cities and solutions to mazes.
+
+
+While relatively simple, these algorithms form the foundations of many more sophisticated techniques for optimization. I begin here by describing and programming two uninformed search methods: breadth first search and depth first search. Both graph searches are complete, but not necessarily optimal. The algorithms are demonstrated by finding solutions to a graph of connected cities as well as a maze.
 
 
 ## Breadth First Search

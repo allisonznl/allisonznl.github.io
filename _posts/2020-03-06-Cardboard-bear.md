@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 'Bringing a Cardboard Bear to Life Using CAD'
-tags: [Rhinoceros6, CAD, Laser Cutting, Digital Fabrication]
-featured_image_thumbnail: assets/images/posts/2020/cardboard-bear/colors_rainbow.JPG
+title: 'Constructing a Cardboard Black Bear'
+tag: Engineering + Art 
+featured_image_thumbnail: assets/images/posts/2020/cardboard-bear/colors_rainbow_cropped.JPG
 featured_image: assets/images/posts/2020/cardboard-bear/colors_rainbow.JPG
 featured: true
 hidden: true
+excerpt_separator: <!--more-->
 ---
 
-This cardboard baby bear was first modeled in Rhinoceros 6 as a Non-Uniform Rational Basis Spline (NURBS) object, a smooth curved object created using mathematically accurate representations of curves. I modeled the bear by eye, from looking at images of black bears. The object was then converted into a mesh object, unrolled, and slightly modified before it was laser cut out of cardboard and assembled.
+I modeled this black bear digitally in Rhinoceros6 as a Non-Uniform Rational Basis Spline (NURBS) object, a smooth object created using mathematically accurate representations of curves. The object was then converted into a triangular mesh object, unrolled, and modified before it was laser cut out of cardboard and assembled. <!--more--> 
 
 In Progress:
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/cardboard-bear/rhino.jpeg)

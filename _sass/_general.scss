@@ -13,6 +13,7 @@ body {
   background: #fff;
   color: $gray;
   line-height: 1.66667;
+  font-family: $font-primary;
 }
 
 a {
@@ -80,7 +81,7 @@ h6:first-child {
 }
 
 p {
-  margin: 0 0 1.66667em;
+  margin: 0 0 1.3em;
 }
 
 address {
@@ -175,7 +176,7 @@ dd {
 
 ul,
 ol {
-  margin: 0 0 1.66667em;
+  margin: 0 0 1em;
   padding: 0 0 0 1.66667em;
 }
 

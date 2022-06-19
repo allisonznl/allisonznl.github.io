@@ -1,16 +1,17 @@
 ---
 layout: post
 title:  "Dinosaurs and XKCD"
-tags: [Numerical Analysis, dinosaurs, optimization]
-featured_image_thumbnail:
+tag: Applied Math
+featured: true 
+featured_image_thumbnail: assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png
 featured_image:
 ---
 
-In this post, I find the solution to a problem found in an XKCD comic involving raptors attacking a human. The goal is to find the optimal action for a human who is surrounded by three raptors positioned in an equilateral triangle.
+In this post, I find the solution to a problem found in an XKCD comic involving raptors attacking a human. The goal was to find the optimal action for a human who is surrounded by three raptors positioned in an equilateral triangle. The problem appears in an XKCD comic at <https://xkcd.com/135/>.
 
 <center><img src="assets/images/posts/2020/XKCD-dinosaurs/raptors_xkcd.png" width="400px"></center>
 
-The problem above appears in an XKCD comic at <https://xkcd.com/135/>.
+
 
 ## Question 2
 Let the human position be $\boldsymbol{h}(t) \in \mathbb{R}^2$ and a raptor's position $\boldsymbol{r}(t) \in \mathbb{R}^2$.

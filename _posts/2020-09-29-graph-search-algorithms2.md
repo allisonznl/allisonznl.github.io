@@ -1,16 +1,16 @@
 ---
 layout: post
 title: 'Graph Search Algorithms 2: UCS and A*'
-tags: [algorithms, graphs, AI, optimization]
+tag: Algorithms 
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
 featured: false
 hidden: false
 ---
 
-This is the second set of a series of graph search algorithms I will examine. These algorithms improve upon BFS and DFS to create more efficient and powerful search methods. Here, two informed graph search methods-- Uniform Cost Search and A star-- will be described and programmed. The algorithms are demonstrated on two different weighted undirected graphs and to find the optimal path on a maze-like map.
+This is the second set of a series of graph search algorithms I will examine. Here, two informed graph search methods-- Uniform Cost Search and A star-- will be described and programmed. The algorithms are demonstrated on two different weighted undirected graphs and to find the optimal path on a maze-like map.
 
-Breadth-first search is only optimal when all path costs are equal. Uniform Cost Search expands on Breadth-first search by solving the non-optimality when all path costs are not equal by always taking the shortest available path. Furthermore, BFS selects the goal node when it first appears (as a child of a parent node), which could result in a sub-optimal path. UCS will only select the goal node when it is selected for expansion in the priority queue. UCS is optimal!
+These algorithms improve upon BFS and DFS to create more efficient and powerful search methods.  Breadth-first search is only optimal when all path costs are equal. Uniform Cost Search expands on Breadth-first search by solving the non-optimality when all path costs are not equal by always taking the shortest available path. Furthermore, BFS selects the goal node when it first appears (as a child of a parent node), which could result in a sub-optimal path. UCS will only select the goal node when it is selected for expansion in the priority queue. UCS is optimal!
 
 I start by creating a class called <code>Frontier_PQ</code> to represent the frontier (a priority queue) for both Uniform Cost Search and A* Search. The priority queue is sorted in order of lowest cost to greatest cost and is implemented as a heap. There is some redundancy in the information stored in **states** and **q**. This redundancy could be eliminated to reduce storage requirements, however, it would increase the time complexity as the priority queue would need to be checked for states.
 

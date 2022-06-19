@@ -21,8 +21,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Karla:400,400i,700,700i" rel="stylesheet">
 
     <!-- CSS Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/b8a9fb18a2.js" crossorigin="anonymous"></script>
+
+
+
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
-        
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
@@ -33,16 +38,7 @@
         <div id="content" class="site-content fadeInDown delay_075s">
             <div class="inner-wide">
                 {{ content }}
-
-                {% if paginator.total_posts > site.paginate %}
-                {% if page.class == 'tag-template' %}
-                {% include tag-pagination.html %}
-                {% endif %}
-                {% endif %}
-
-                {% if site.mailchimp_url and page.class == 'tag-template' %}
-                {% include newsletter-box.html %}
-                {% endif %}
+                
                 {% include footer.html %}
             </div><!-- .inner-wide -->
         </div><!-- .site-content -->
@@ -64,7 +60,8 @@
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

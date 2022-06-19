@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  Copernicus to Newton - A Scientific Revolution during the years 1543-1727
-tags: [ Scientific Revolution, history/philosophy]
+tag: Science Writing 
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/scientific-revolution-paper/galileo.png
+excerpt_separator: <!--more-->
 ---
 
-In this paper, I argue that the years from the death of Copernicus in 1543 to the death of Isaac Newton in 1727 was, in fact, a Scientific Revolution. The topic is one discussed by scholars in various texts, like Herbert Butterfield's *Origins of Modern Science* and Steven Shapin's *The Scientific Revolution*.
+In this paper, I argue that the years from the death of Copernicus in 1543 to the death of Isaac Newton in 1727 was, in fact, a Scientific Revolution. <!--more--> The topic is one discussed by scholars in various texts, like Herbert Butterfield's *Origins of Modern Science* and Steven Shapin's *The Scientific Revolution*.
 
 **A Scientific Revolution**
 

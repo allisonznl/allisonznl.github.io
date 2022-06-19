@@ -1,15 +1,13 @@
 ---
 layout: page
 title: About
-featured_image: /assets/images/pages/about.jpg
+featured_image: /assets/images/pages/about.png
 ---
 
-Allison Liu is a senior at the University of Colorado Boulder (expected graduation May 2022). Studying **applied mathematics** and **computer science**, she is interested in using computing tools to solve intractable problems in science and engineering. Excited by the power of artificial Intelligence, machine learning, and numerical analysis, she has been honing her skills in relevant classes using Python, has contributed to algorithms at the forefront of ultrafast physics research with the [Kapteyn-Murnane Group](https://jila.colorado.edu/kmlabs/), and is currently using machine learning techniques to improve solar flare prediction at the [Laboratory for Atmospheric Space Physics (LASP)](http://lasp.colorado.edu/).
+My name is Allison Liu, and I'm currently a graduate student at the University of Colorado Boulder pursuing a Master's degree in Applied Mathematics (expected graduation May 2023). I am interested in using machine learning and data science techniques to solve research problems with applications to space, sustainability, social justice, and healthcare. 
 
-Her work has been published in *Science Magazine* and *Proceedings of the Combustion Institute*.
+Currently, I am working on a project to augment solar magnetogram data using machine learning techniques to improve solar flare prediction with the Space Weather Technology, Research, and Education Center [SWx TREC](https://www.colorado.edu/spaceweather/) at CU and the [Laboratory for Atmospheric Space Physics (LASP)](http://lasp.colorado.edu/). In the past, I have contributed to algorithms at the forefront of ultrafast physics research with the [Kapteyn-Murnane Group](https://jila.colorado.edu/kmlabs/).
 
-Outside of programming, Allison is passionate about machine learning ethics and increasing diversity in STEM. In parallel with her career interests, she is interested in empowering underrepresented students to feel confident doing STEM. She has volunteered weekly with [PISEC](https://www.colorado.edu/outreach/pisec/), an organization at CU Boulder which empowers grade-school students, largely of under-represented minorities, to become interested in STEM. This past summer (2021), she created and taught machine learning curriculum to motivated high school students for a week-long summer camp.
+In parallel with my career interests, I am passionate about machine learning ethics and increasing diversity in STEM. Specifically, I would love to contribute to making machine learning models more interpretable by humans. Furthermore, I am interested in empowering underrepresented students to feel confident in STEM. Over the past three years, I have volunteered regularly with a group of primary school students (largely of underrepresented minorities) to encourage an interest in STEM, developed and taught machine learning curriculum to high schoolers for a week long summer camp, and created and led programming tutorials for undergraduates in a summer research program.
 
-She is a routesetter at the CU Boulder Climbing Gym and loves rock climbing, hiking, and traveling.
-
-*Thank you for reading!*
+Outside of programming, I love rock climbing, hiking, and traveling and I am a route setter at the CU Boulder climbing gym!

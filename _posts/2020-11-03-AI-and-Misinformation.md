@@ -1,14 +1,15 @@
 ---
 layout: post
 title: 'Artificial Intelligence and Misinformation'
-tags: [algorithms, AI]
+tag: Science Writing 
 featured_image_thumbnail:
 featured_image:
 featured: false
 hidden: false
 ---
+In this essay, I examine the ethics of Artificial Intelligence as it pertains to the spread of misinformation.
 
-Misinformation is spread efficiently and at unprecedented rates through the use of Artificial Intelligence (AI). Developers of this technology also have an obligation to not introduce unwarranted bias into AI machines which make decisions that affect the lives of humans. In this essay, I examine the ethics of Artificial Intelligence as it pertains to the spread of misinformation.
+Misinformation is spread efficiently and at unprecedented rates through the use of Artificial Intelligence (AI). Developers of this technology also have an obligation to not introduce unwarranted bias into AI machines which make decisions that affect the lives of humans. 
 
 # Artificial Intelligence and Misinformation
 The ability of technology to demonstrate human characteristics like learning and decision-making is known as “Artificial Intelligence (AI)”. The field of artificial intelligence has been improving rapidly in recent years and has become increasingly powerful as a tool to spread information efficiently. It is also an effective tool that can mitigate the spread of misinformation by detecting and removing misleading content, which if spread further can be dangerous to the well-being of society. However, as AI techniques have become more prevalent and accessible, the use of AI for spreading harmful misinformation is a concern, particularly when it comes to user-profiling, the creation of “deep-fakes”, and the removal of human oversight from information generation. The misuse of AI has terrifying, major consequences, from further dividing societal groups, to inciting violence, to decreasing vaccination rates, to influencing election results.
