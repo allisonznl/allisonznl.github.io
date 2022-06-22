@@ -2,16 +2,14 @@
 layout: post
 title: 'Modifying the Gerchberg-Saxton Phase-Retrieval Algorithm'
 tag: Algorithms
-featured_image_thumbnail: assets/images/posts/2019/GS/science_cover_cropped.gif
+featured_image_thumbnail: assets/images/posts/2019/GS/science_header_cropped.jpg
 featured_image: assets/images/posts/2019/GS/science_header.jpg
 featured: true
 hidden: true
 excerpt_separator: <!--more-->
 ---
 
-
-
-I optimized the traditional Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). My modified algorithm could gather more information and achieve a higher resolution than traditional beam-characterization methods using the same data. <!--more-->
+I modified the standard Gerchberg-Saxton (GS) phase-retrieval algorithm to retrieve the phase of laser beams containing orbital angular momentum (OAM). My algorithm returned more information and achieve a higher resolution than traditional beam-characterization methods using the same data. <!--more-->
 
 <section class="download-box inner">
 	<div class="download-box-links">

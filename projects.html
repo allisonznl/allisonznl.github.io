@@ -3,24 +3,73 @@ layout: page
 title: Projects
 ---
 
-<ul>
-  {% for tag in site.tags %}
-    <h1>{{ tag.category }}</h1>
-    <p>{{ tag.content | markdownify }}</p>
-    {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
-    {% for post in filtered_posts %}
-    <li>
-      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      <!-- <h6>{{ post.date | date: "%Y-%m-%d" }}</h6> -->
-
-      <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-       <b>{{ post.date | date: "%B %-d, %Y" }}</b> 
-    </time>
-      {{ post.excerpt }}
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Professional</a>
     </li>
-    {% endfor %}
-  {% endfor %}
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Personal</a>
+    </li>
 </ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <ul>
+        <div class="navtab-box">
+        {% for tag in site.tags %}
+          {% if tag.category != 'Personal' %}
+            <a href="#{{tag.category}}">{{tag.category}}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
 
+        {% for tag in site.tags %}
+          {% if tag.category != 'Personal' %}
+            <section id="{{tag.category}}">
+            <h2>{{ tag.category }}</h2>
+              <p>{{ tag.content | markdownify }}</p>
+              {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
+              {% for post in filtered_posts %}
+              <li>
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                <b>{{ post.date | date: "%B %-d, %Y" }}</b> 
+              </time>
+                {{ post.excerpt }}
+              </li>
+              {% endfor %}
+            </section>
+          {%endif%}
+        {% endfor %}
+      </ul>
 
+    </div>
 
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <ul>
+        {% for tag in site.tags %}
+        
+        {% if tag.category == 'Personal' %}
+          <section id="{{tag.category}}">
+            <h2>Personal Projects</h2>
+            <p>{{ tag.content | markdownify }}</p>
+            {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
+            {% for post in filtered_posts %}
+            <li>
+              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+              <!-- <h6>{{ post.date | date: "%Y-%m-%d" }}</h6> -->
+        
+              <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                <b>{{ post.date | date: "%B %-d, %Y" }}</b> 
+              </time>
+              {{ post.excerpt }}
+            </li>
+            {% endfor %}
+          </section>
+
+        {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div>
+
+</div>

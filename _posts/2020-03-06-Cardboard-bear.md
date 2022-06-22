@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Constructing a Cardboard Black Bear'
-tag: Engineering + Art 
+tag: Engineering
 featured_image_thumbnail: assets/images/posts/2020/cardboard-bear/colors_rainbow_cropped.JPG
 featured_image: assets/images/posts/2020/cardboard-bear/colors_rainbow.JPG
 featured: true

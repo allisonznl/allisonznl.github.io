@@ -379,3 +379,26 @@
 .older-posts {
   right: 0;
 }
+
+.navtab-box a {
+  // border: 1px solid $gray-lighter;
+  display: inline-block;
+  font-size: 0.7rem;
+  // line-height: 1.5;
+  // margin: 0 0.25em 0.25em 0;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+}
+
+.navtab-box a:hover {
+  background: $color-accent;
+  color: #fff;
+}
+
+.nav-item a, .nav-item a:hover {
+  text-decoration: none;
+}
+
+section{
+  padding-top: 1em;
+}

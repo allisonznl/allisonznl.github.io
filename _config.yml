@@ -44,9 +44,9 @@ collections:
     output: true
     order: 
       - machinelearning.md
-      - eng-art.md
       - appm.md
       - algorithms.md
+      - engineering.md
       - sciencewriting.md
       - climbing.md
 
