@@ -5,7 +5,6 @@ tag: Algorithms
 featured_image_thumbnail: assets/images/posts/2019/GS/science_header_cropped.jpg
 featured_image: assets/images/posts/2019/GS/science_header.jpg
 featured: true
-hidden: true
 excerpt_separator: <!--more-->
 ---
 

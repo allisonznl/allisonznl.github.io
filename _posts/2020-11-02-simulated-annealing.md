@@ -5,7 +5,6 @@ tag: Algorithms
 featured_image_thumbnail: assets/images/posts/2020/simulated-annealing/cover1.png
 featured_image: assets/images/posts/2020/simulated-annealing/final_path.png
 featured: false
-hidden: false
 ---
 
 In this third series on graph search algorithms, I use simulated annealing to find solutions to the traveling salesman problem.

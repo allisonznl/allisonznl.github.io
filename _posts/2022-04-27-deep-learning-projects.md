@@ -5,7 +5,6 @@ tag: Machine Learning
 featured_image_thumbnail: assets/images/posts/2022/deep-learning-projects/fraud_federatedlearning.png
 featured_image: assets/images/posts/2022/deep-learning-projects/fraud_federatedlearning.png
 featured: true
-hidden: true
 excerpt_separator: <!--more-->
 ---
 

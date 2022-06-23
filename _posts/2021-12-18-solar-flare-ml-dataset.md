@@ -5,7 +5,6 @@ tag: Machine Learning
 featured_image_thumbnail: assets/images/posts/2021/GAN-solarflare/images.png
 featured_image: assets/images/posts/2021/GAN-solarflare/images.png
 featured: true
-hidden: true
 excerpt_separator: <!--more-->
 ---
 

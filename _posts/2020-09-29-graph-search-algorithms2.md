@@ -5,7 +5,6 @@ tag: Algorithms
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
 featured: false
-hidden: false
 ---
 
 This is the second set of a series of graph search algorithms I will examine. Here, two informed graph search methods-- Uniform Cost Search and A star-- will be described and programmed. The algorithms are demonstrated on two different weighted undirected graphs and to find the optimal path on a maze-like map.

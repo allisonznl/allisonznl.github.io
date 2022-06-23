@@ -5,7 +5,6 @@ tag: Engineering
 featured: true
 featured_image_thumbnail: assets/images/posts/2018/gateway-to-space/Descent2p2_cropped.png
 featured_image: assets/images/posts/2018/gateway-to-space/Descent2p2.png
-hidden: false
 excerpt_separator: <!--more-->
 ---
 

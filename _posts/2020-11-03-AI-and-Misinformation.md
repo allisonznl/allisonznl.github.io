@@ -5,7 +5,6 @@ tag: Science Writing
 featured_image_thumbnail:
 featured_image:
 featured: false
-hidden: false
 ---
 In this essay, I examine the ethics of Artificial Intelligence as it pertains to the spread of misinformation.
 

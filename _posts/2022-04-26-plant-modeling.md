@@ -5,7 +5,6 @@ tag: Applied Math
 featured_image_thumbnail: /assets/images/posts/2022/plant-modeling/L_cowparsley.png
 featured_image: /assets/images/posts/2022/plant-modeling/L_cowparsley.png
 featured: true
-hidden: false
 excerpt_separator: <!--more-->
 ---
 

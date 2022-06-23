@@ -5,7 +5,6 @@ tag: Algorithms
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/search-algorithms/us_map_distances.png
 featured: false
-hidden: false
 ---
 
 This is the first set of a series of graph search algorithms that I will examine. I describe breadth first search and depth first search and implement them to find paths between cities and solutions to mazes.

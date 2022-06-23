@@ -4,7 +4,6 @@ title:  A Summary of Arguments Against the Bayesian Approach to Probabilistic In
 tag: Science Writing 
 featured_image_thumbnail:
 featured_image: assets/images/posts/2020/scientific-revolution-paper/dice.png
-hidden: true
 ---
 
 In this essay, I summarize Clark Glymour's arguments against Bayesian inference as a foundation for scientific inference from his book "Theory and Evidence", written in 1980.
