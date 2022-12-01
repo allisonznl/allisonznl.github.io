@@ -3,10 +3,15 @@ layout: page
 title: Resume
 featured_image:
 ---
+<a id="back-to-top" class="back-to-top" href="#page">
+  <span class="icon-arrow-up" aria-hidden="true"></span>
+  <span class="screen-reader-text">Back to top</span>
+</a>
+
 <section class="download-box inner">
 	<div class="download-box-links">
 	    <a href="/assets/documents/resumes/Resume20220607.pdf" target="_blank">Resume PDF</a>
-	    <a href="/assets/documents/transcripts/LiuA-Undergrad.pdf" target="_blank">Transcript</a>
+	    <!-- <a href="/assets/documents/transcripts/LiuA-Undergrad.pdf" target="_blank">Transcript</a> -->
 	</div>
 </section>
 
