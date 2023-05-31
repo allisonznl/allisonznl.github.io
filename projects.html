@@ -8,12 +8,12 @@ title: Projects
     <ul>
       <div class="navtab-box">
       {% for tag in site.tags %}
-        {% if tag.category == 'Climbing' %}
-            <a href="#{{tag.category}}">More</a>
-        {% else %}
+        {% if tag.category != 'Climbing' %}
             <a href="#{{tag.category}}">{{tag.category}}</a>
         {% endif %}
       {% endfor %}
+      <!-- More -->
+        <a href="#Climbing">More</a>
       </div>
 
 {% for tag in site.tags %}

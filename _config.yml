@@ -31,10 +31,10 @@ navigation:
 
 # Required Plugins
 plugins_dir:
-  # - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  # - jekyll-paginate
   # - jekyll-tagsgenerator
 
 collections:
