@@ -8,7 +8,7 @@ featured: true
 excerpt_separator: <!--more-->
 ---
 
-I modeled this black bear digitally in Rhinoceros6 as a Non-Uniform Rational Basis Spline (NURBS) object, a smooth object created using mathematically accurate representations of curves. The object was then converted into a triangular mesh object, unrolled, and modified before it was laser cut out of cardboard and assembled. <!--more--> 
+This black bear was digitally modeled in Rhinoceros6 as a Non-Uniform Rational Basis Spline (NURBS) object, a smooth object created using mathematically accurate representations of curves. The object was then converted into a triangular mesh object, unrolled, and modified before it was laser cut out of cardboard and assembled. <!--more--> 
 
 In Progress:
 ![final piece]({{ a11isonliu.github.io}}assets/images/posts/2020/cardboard-bear/rhino.jpeg)

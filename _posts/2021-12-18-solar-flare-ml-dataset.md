@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'Creating an Improved Dataset for Solar Flare Prediction using Generative Adversarial Networks (GANs)'
+title: 'Creating an Improved Dataset for Solar Flare Prediction'
 tag: Machine Learning
-featured_image_thumbnail: assets/images/posts/2021/GAN-solarflare/images.png
+featured_image_thumbnail: assets/images/posts/2021/GAN-solarflare/images_cropped.png
 featured_image: assets/images/posts/2021/GAN-solarflare/images.png
 featured: true
 excerpt_separator: <!--more-->
 ---
 
-Currently, I am working to augment solar magnetogram data using GANS to improve solar flare prediction models. It is incredibly important to be able to predict solar flares accurately, as they affect the Earth’s magnetic field which can disrupt the power grid, GPS and radio communications, and harm astronauts in space. <!--more--> This work is being done with the Laboratory for Atmospheric and Space Physics [LASP](https://lasp.colorado.edu/) and the Space Weather Technology and Research Center [SWxTREC](https://www.colorado.edu/spaceweather/) at the Univ. of Colorado Boulder.
+I augmented solar magnetogram data using generative adversarial networks (GANs) to provide more data for solar flare prediction models. <!--more--> It is important to be able to predict solar flares accurately, as they affect the Earth’s magnetic field which can disrupt the power grid, GPS and radio communications, and harm astronauts in space. This work was completed with the support of the Laboratory for Atmospheric and Space Physics [LASP](https://lasp.colorado.edu/) and the Space Weather Technology and Research Center [SWxTREC](https://www.colorado.edu/spaceweather/) at the Univ. of Colorado Boulder.
 
 I presented this work at the American Geophysical Union conference in December 2021 and at the Machine Learning in Heliophysics Conference, held at CU Boulder this March 2022.
 

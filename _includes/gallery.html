@@ -1,0 +1,67 @@
+
+
+{% assign featured-posts = site.posts | where: "featured",  true %}
+
+<div class="container">
+    <div class="gallery">
+        {% for fp in featured-posts %}
+        {% assign loopindex_minus_1 = forloop.index | minus: 1 %}
+        <!-- <p>{{forloop.index}}</p> -->
+
+        {% if forloop.index == 1%}
+            <div class="gallery__item">
+                <a href="{{ fp.url | absolute_url }}"><img class="gallery__img" src="{{featured-posts[0].featured_image_thumbnail}}" alt="{{featured-posts[0].title}}"></a>
+                <div class="overlay">
+                    <div class="gallery__title">{{featured-posts[0].title}}</div>
+                    <div class="gallery__date">{{fp.date | date: "%B %-d, %Y"}}</div>
+                    <hr class="gallery__hr">
+                    <div class="gallery__caption">
+                        {{featured-posts[0].excerpt}}
+                        <div class="download-box inner">
+                            <div class="download-box-links">
+                                {% if fp.link %}
+                                <a href="{{ fp.link }}" target="__blank">View Project!</a>
+                                {%else %}
+                                <a href="{{ fp.url | absolute_url }}">Read More!</a>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        {% else %}
+            <div class="gallery__item">
+                <a href="{{ fp.url | absolute_url }}"><img class="gallery__img" src="{{featured-posts[loopindex_minus_1].featured_image_thumbnail}}" alt="{{featured-posts[loopindex_minus_1].title}}"></a>
+                <div class="overlay">
+                    <div class="gallery__title">{{featured-posts[loopindex_minus_1].title}}</div>
+                    <div class="gallery__date">{{fp.date | date: "%B %-d, %Y"}}</div>
+                    <hr class="gallery__hr">
+                    <div class="gallery__caption">
+                        {{featured-posts[loopindex_minus_1].excerpt}}
+                        <div class="download-box inner">
+                            <div class="download-box-links">
+                                {% if fp.link %}
+                                <a href="{{ fp.link }}" target="__blank">View Project!</a>
+                                {%else %}
+                                <a href="{{ fp.url | absolute_url }}">Read More!</a>
+                                {%endif%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        {% endif %}
+        {% endfor %}
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+

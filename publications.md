@@ -55,7 +55,7 @@ featured_image:
 		<h3> 2022 </h3>
 		<ul>
 			<li>
-				* <b>Data Augmentation of Magnetograms for Solar Flare Prediction using Generative Adversarial Networks.</b> <b>A. Liu</b> and W. Carande.  Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510080.1. Presented at AGU Conference 2021.
+				<b>Data Augmentation of Magnetograms for Solar Flare Prediction using Generative Adversarial Networks.</b> <b>A. Liu</b> and W. Carande.  Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510080.1. Presented at AGU Conference 2021.
 
 				<section class="download-box inner">
 					<div class="download-box-links">
@@ -65,7 +65,7 @@ featured_image:
 				</section>
 			</li>
 			<li>
-				* <b>SWx TREC Deep Learning Laboratory: Advances in Machine Learning for Space Weather.</b> W. Carande, <b>A. Liu</b>, C. Feldhaus, J. Craft, and C. Pankratz. Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510078.1. Presented at AGU Conference 2021.
+				<b>SWx TREC Deep Learning Laboratory: Advances in Machine Learning for Space Weather.</b> W. Carande, <b>A. Liu</b>, C. Feldhaus, J. Craft, and C. Pankratz. Earth and Space Science Open Archive (2022). DOI: 10.1002/essoar.10510078.1. Presented at AGU Conference 2021.
 
 				<section class="download-box inner">
 					<div class="download-box-links">
@@ -74,7 +74,3 @@ featured_image:
 				</section>
 			</li>
 		<ul>
-	</section>
-    </div>
-
-</div>

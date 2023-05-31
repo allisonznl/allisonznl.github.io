@@ -8,7 +8,7 @@ featured: true
 excerpt_separator: <!--more-->
 ---
 
-This is a collection of Applied Math projects I have done throughout my undergraduate career at CU Boulder. These projects vary in topic and complexity and were done as a collaborative effort between me and other students. <!--more-->
+A collection of Applied Math projects I have done throughout my undergraduate career at CU Boulder. These collaborative projects vary in topic and complexity. (Ex: Foraging Patterns in Ants, Modeling Disease Epidemics with Markov Chains)<!--more-->
 
 ## Mathematical Modeling
 #### Foraging Patterns in Ants

@@ -10,7 +10,7 @@ post_class: post-template
 
         <header class="post-header">
             <div class="post-meta">
-                <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                <time class="post-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
                     {{ page.date | date: "%B %-d, %Y" }}
                 </time>
             </div><!-- .post-meta -->
@@ -29,7 +29,7 @@ post_class: post-template
         </footer>
     </article>
     <section class="read-next inner">
-        <h2 class="read-next-title">Related Projects</h2>
+        <h2 class="read-next-title">More Projects</h2>
         {% if page.previous.url %}
         <article class="post">
             <header class="post-header">
