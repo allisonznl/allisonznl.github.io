@@ -6,7 +6,7 @@ logo:
 # Author image is used in site sidebar and greetings in the home page hero text
 author:
   image: 'bio-photo1.jpg'
-  greetings: "Hi! My name is Allison Liu. I'm passionate about improving sustainability through about uncovering and understanding patterns in data."
+  greetings: "Hi! My name is Allison Liu. I'm passionate about improving sustainability through uncovering and understanding patterns in data."
 favicon: 'assets/images/favicon.ico'
 baseurl:
 production_url: https://allisonznliu.com/
