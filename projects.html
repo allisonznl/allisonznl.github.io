@@ -3,44 +3,66 @@ layout: page
 title: Projects
 ---
 
-
 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <ul>
-      <div class="navtab-box">
-      {% for tag in site.tags %}
-        {% if tag.category != 'Climbing' %}
-            <a href="#{{tag.category}}">{{tag.category}}</a>
-        {% endif %}
-      {% endfor %}
-      <!-- More -->
-        <a href="#Climbing">More</a>
-      </div>
+  <ul>
+    <div class="navtab-box">
+    {% for tag in site.tags %}
+      {% if tag.category != 'Climbing' %}
+          <a href="#{{tag.category}}">{{tag.category}}</a>
+      {% endif %}
+    {% endfor %}
+    <!-- More -->
+      <a href="#Climbing">More</a>
+    </div>
 
 {% for tag in site.tags %}
 <hr>
-    <section id="{{tag.category}}">
-    <h1>{{ tag.category }}</h1>
-    {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
-    {% for post in filtered_posts %}
-        <h4>{{ post.title }}</h4>
-        <b>{{ post.date | date: "%B %-d, %Y" }}</b>
-        {{ post.excerpt }}
+{% if tag.category != 'Climbing' %}
+  <section id="{{tag.category}}">
+  <h1>{{ tag.category }}</h1>
+  {% assign filtered_posts = site.posts | where: 'tag', tag.category %}
+  {% for post in filtered_posts %}
+      <h4>{{ post.title }}</h4>
+      <b>{{ post.date | date: "%B %-d, %Y" }}</b>
+      {{ post.excerpt }}
 
-        <div class="download-box inner">
-            <div class="download-box-links">
-                {% if fp.link %}
-                <a href="{{ fp.link }}" target="__blank">View Project!</a>
-                {%else %}
-                <a href="{{ post.url | absolute_url }}">Read More!</a>
-                {%endif%}
-            </div>
-        </div>
-    {% endfor %}
-    </section>
-
+      <div class="download-box inner">
+          <div class="download-box-links">
+              {% if fp.link %}
+              <a href="{{ fp.link }}" target="__blank">View Project!</a>
+              {%else %}
+              <a href="{{ post.url | absolute_url }}">Read More!</a>
+              {%endif%}
+          </div>
+      </div>
+  {% endfor %}
+  </section>
+  {% endif %}
 {% endfor %}
+<!-- Climbing -->
+<section id="Climbing">
+  <h1>Climbing</h1>
+  {% assign filtered_posts = site.posts | where: 'tag', 'Climbing' %}
+  {% for post in filtered_posts %}
+      <h4>{{ post.title }}</h4>
+      <b>{{ post.date | date: "%B %-d, %Y" }}</b>
+      {{ post.excerpt }}
 
-      </ul>
-    </div>
+      <div class="download-box inner">
+          <div class="download-box-links">
+              {% if fp.link %}
+              <a href="{{ fp.link }}" target="__blank">View Project!</a>
+              {%else %}
+              <a href="{{ post.url | absolute_url }}">Read More!</a>
+              {%endif%}
+          </div>
+      </div>
+  {% endfor %}
+  </section>
+
+    </ul>
+  </div>
 
 </div>
+
+
