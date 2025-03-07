@@ -1,6 +1,6 @@
 # Site settings
 name: 'Allison Liu'
-description: 'allisonznliu@gmail.com'
+description: 'azn@allisonznliu.com'
 meta_description: ''
 logo:
 # Author image is used in site sidebar and greetings in the home page hero text
@@ -14,8 +14,8 @@ production_url: https://allisonznliu.com/
 ga_analytics: G-1HG83XG8WR
 
 # Social links
-github: 'a11isonliu'
-linkedin: 'allison-liu-685497159'
+github: 'allisonznl'
+linkedin: 'allisonznliu'
 
 # Navigation
 navigation:
