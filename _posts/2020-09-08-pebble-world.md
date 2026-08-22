@@ -6,7 +6,7 @@ featured_image_thumbnail:
 featured_image:
 featured: false 
 ---
-Amidst the COVID-19 pandemic, I helped developed a new bouldering area with some friends. This is a video I made of one of the most exciting and fun climbs we discovered called "Thy Holy Arete".
+Amidst the COVID-19 pandemic, I developed a new bouldering area with some friends. This is a video I made of one of the most exciting and fun climbs we discovered called "Thy Holy Arete".
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IvxekpPWXVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

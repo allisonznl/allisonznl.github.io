@@ -8,7 +8,7 @@ featured: true
 excerpt_separator: <!--more-->
 ---
 
-I modified the standard Gerchberg-Saxton (GS) phase-retrieval algorithm to return more information than traditional beam-characterization methods given the same data. Other members of my lab group used the algorithm to analyze their laser beams containing orbital angular momentum (OAM), which resulted in a publication in Science Magazine.<!--more-->
+I modified the standard Gerchberg-Saxton (GS) phase-retrieval algorithm to return more information than traditional beam-characterization methods. The algorithm was used to analyze laser beams containing orbital angular momentum (OAM), and resulted in a publication in Science Magazine.<!--more-->
 
 <section class="download-box inner">
 	<div class="download-box-links">
